@@ -145,12 +145,6 @@ body{
     text-decoration: none;
     border-radius: 7px;
 }
-/* ---------- Efecto hover en el boton del encabezado ---------- */
-.encabezado__boton:hover{
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-}
 /* ---------- Style Secciones ---------- */
 .seccion{
     padding: 7%;
@@ -176,7 +170,7 @@ body{
     height: auto;
     padding-bottom: 40px;
 }
-.seccion__lista article, .seccion__tiempo article{
+.seccion__lista article{
     width: 15rem;
     margin-right: 40px;
 }
@@ -255,12 +249,6 @@ body{
     border: 0;
     width: 95%;
     margin-top: 30px;
-}
-/* ---------- Efecto Hover en los botones de las secciones ---------- */
-.seccion__boton:hover{
-    color: white;
-    background-color: black;
-    border: 1px solid white;
 }
 /* ---------- Style Seccion Newsletter ----------*/
 .seccion__texto{
@@ -410,6 +398,7 @@ body{
 }
 .seccion__clientes--wrap img{
     width: 6rem;
+    opacity: 0.5;
 }
 .seccion__articulo--izquierda{
     text-align: left;
@@ -640,8 +629,6 @@ body{
 /* ---------- Style Linea de Tiempo ---------- */
 .seccion__tiempo{
     list-style-type: none;
-    border-left: 1px solid #707070;
-    padding: 0px;
     height: auto;
 }
 .seccion__tiempo li {
@@ -659,17 +646,6 @@ body{
     width: 100%;
     padding: 0 15%;
     height: auto;
-}
-.seccion__tiempo bdi:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -12px;
-    width: 18px;
-    height: 18px;
-    border: 2px solid #01c38e;
-    border-radius: 10px;
-    background: #01c38e;
 }
 .seccion__tiempo span{
     color: #01c38e;
@@ -806,27 +782,6 @@ body{
         padding: 0;
         margin: 0 auto;
     }
-    .seccion__fecha--primero::before{
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 50%;
-        height: 1.5px;
-        background-color: grey;
-    }
-    .seccion__fecha--ultimo::before{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 50%;
-        height: 1.5px;
-        background-color: grey;
-    }
-    .seccion__fecha--medio{
-        border-top: 2px solid grey;
-    }
     .seccion__fecha{
         float: left;
         position: relative;
@@ -835,23 +790,12 @@ body{
         margin-bottom: 10px;
         padding: 3%;
     }
-    .seccion__tiempo li bdi:before{
-        content: '';
-        position: absolute;
-        top: -10px;
-        left: 47%;
-        width: 18px;
-        height: 18px;
-        border: 2px solid #01c38e;
-        border-radius: 10px;
-        background: #01c38e;
-    }
     .seccion__contenedor{
-        margin: 70px 0 50px 0;
+        margin-bottom: 50px;
     }
     .seccion__fecha span{
         font-family: 'Rubik', sans-serif;
-        font-size: 1.2rem;
+        font-size: 2rem;
         color: #01c38e;
     }
     .seccion__fecha article{
@@ -861,6 +805,7 @@ body{
     .seccion__tiempo li p {
         margin-left: 0;
         margin-top: 20px;
+        display: none;
     }
     /*Style Contacto (galeria)*/
     .seccion__galeria{
@@ -968,3 +913,47 @@ body{
     }
 }
 
+/* Animaciones */
+.menu__pagina a:hover{
+    animation-duration: 4s;
+    animation-name: menu__secciones;
+    transform: scale(1.1);
+}
+@keyframes menu__secciones{
+    0%{
+        color: white;
+        font-size: 1.4;
+    }
+    20%{
+        color: black;
+        font-size: 1.6;
+    }
+    30%, 100%{
+        color: #01c38e;
+        font-size: 1.8;
+    }
+}
+.seccion__lista article:hover{
+    transform: scale(1.15);
+    transition: all 2s
+}
+.seccion__clientes--wrap img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.seccion__boton:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transition: all 1s;
+}
+.encabezado__boton:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transition: all 1s;
+}
+.seccion__año:hover + p{
+    display: block;
+}
