@@ -124,18 +124,23 @@ body{
     text-align: left;
 }
 .encabezado__titulo{
+    position: relative;
     color: white;
     font-size: 2.5rem;
     font-family: 'Rubik', sans-serif;
+    left: 0;
     margin-bottom: 10px;
 }
 .encabezado__texto{
+    position: relative;
     color: white;
     font-size: 1rem;
     font-family: 'Hind Siliguri', sans-serif;
+    left: 0;
     margin-bottom: 30px;
 }
 .encabezado__boton{
+    position: relative;
     font-size: 0.8;
     color: black;
     background-color: white;
@@ -143,6 +148,7 @@ body{
     margin-top: 15px;
     padding: 15px 35px;
     text-decoration: none;
+    left: 0;
     border-radius: 7px;
 }
 /* ---------- Style Secciones ---------- */
@@ -931,6 +937,35 @@ body{
     30%, 100%{
         color: #01c38e;
         font-size: 1.8;
+    }
+}
+.encabezado__titulo{
+    animation-duration: 2s;
+    animation-name: desplazamiento;
+    animation-iteration-count: 1;
+}
+.encabezado__texto{
+    animation-duration: 5s;
+    animation-name: desplazamiento;
+    animation-iteration-count: 1;
+}
+.encabezado__boton{
+    animation-duration: 3s;
+    animation-name: desplazamiento;
+    animation-iteration-count: 1;
+}
+@keyframes desplazamiento{
+    0%{
+        left: -100vw;
+    }
+    10%{
+        left: -60vw;
+    }
+    15%{
+        left: -30vw;
+    }
+    100%{
+        left: 0;
     }
 }
 .seccion__lista article:hover{
