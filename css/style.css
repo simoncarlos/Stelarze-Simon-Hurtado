@@ -7,6 +7,60 @@ body{
     background-color: black;
 }
 /* ---------- Style del Menu ---------- */
+nav{
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+.navbar-toggler{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.8px solid white;
+    border-radius: 10px;
+}
+.navbar__boton{
+    width: 25px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.navbar span{
+    display: block;
+    background-color: white;
+    border-radius: 15px;
+}
+.navbar__barra--1{
+    margin-right: 40%;
+    width: 60%;
+    height: 2px;
+}
+.navbar__barra--2{
+    width: 100%;
+    height: 2px;
+}
+.navbar__barra--3{
+    width: 60%;
+    margin-left: 40%;
+    height: 2px;
+}
+.offcanvas, .offcanvas-body, .offcanvas-header{
+    background-color: rgba(0, 0, 0, 0.432);
+}
+.offcanvas-header button{
+    width: 15px;
+    height: 15px;
+}
+.container-fluid{
+    padding: 0 4%;
+}
+.nav-item a, .nav-item button{
+    color: white;
+}
+.nav-item{
+    text-align: center;
+}
 .menu{
     position: fixed;
     top: 0;
@@ -27,8 +81,7 @@ body{
 }
 .menu__logo{
     width: 8rem;
-    margin: 0 0 0 20%;
-}
+}/*used*/
 .menu__secciones{
     position: fixed;
     display: block;
@@ -118,7 +171,7 @@ body{
     justify-content: start;
     align-items: center;
     padding: 10%;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .encabezado__articulo{
     text-align: left;
@@ -816,6 +869,12 @@ body{
     /*Style Contacto (galeria)*/
     .seccion__galeria{
         grid-template-rows: repeat(3, 8rem);
+    }
+}
+@media screen and (min-width: 992px) {
+    .navbar-nav{
+        justify-content: end;
+        flex-grow: 1;
     }
 }
 /*Diseño responsive(Media Query mayor a 1024px)*/
