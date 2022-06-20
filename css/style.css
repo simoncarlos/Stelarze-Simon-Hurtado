@@ -9,19 +9,24 @@ body{
 /* ---------- Style del Menu ---------- */
 nav{
     height: 80px;
-    background-color: black;
+    background-image: linear-gradient(black, black, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.137));
     color: white;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
 }
 .navbar-toggler{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.8px solid white;
+}
+.dropdown{
+    border: 1px solid white;
     border-radius: 10px;
+    padding: 5px 10px
 }
 .navbar__boton{
-    width: 25px;
-    height: 35px;
+    width: 20px;
+    height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -53,113 +58,28 @@ nav{
     height: 15px;
 }
 .container-fluid{
-    padding: 0 4%;
+    padding: 0 5%;
 }
 .nav-item a, .nav-item button{
     color: white;
 }
 .nav-item{
     text-align: center;
+    margin: 15px 0 0 0;
 }
-.menu{
-    position: fixed;
-    top: 0;
-    background: black;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    font-size: 1.3rem;
-    font-family: 'Rubik', sans-serif;
-    z-index: 1;
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.329);
+    width: auto;
 }
-.menu__enlace{
-    width: 30%;
-    display: flex;
+.dropdown-menu li{
+    width: auto;
+}
+.dropdown-menu .dropdown-item{
+    color: white;
+    width: auto;
 }
 .menu__logo{
     width: 8rem;
-}/*used*/
-.menu__secciones{
-    position: fixed;
-    display: block;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    top: 80px;
-    left: -100%;
-    text-align: center;
-}
-.menu__item{
-    display: block;
-    margin: 40px 0;
-    line-height: 30px;
-}
-.menu__enlace--idioma{
-    padding: 15px 30px;
-    border-radius: 10px;
-    background-color: #01c38e;
-    text-decoration: none;
-    color: white;
-}
-.menu__pages{
-    display: block;
-}
-.menu__pagina{
-    padding-bottom: 15px;
-}
-.menu a{
-    color: #fff;
-    text-decoration: none;
-}
-.menu__pages, .menu__secciones{
-    list-style: none;
-}
-.menu__boton{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: block;
-}
-#check:checked ~ .menu__secciones{
-    left:0;
-}
-#check{
-    display: none;
-}
-/* ---------- Efecto Hover de idiomas en el menu ---------- */
-.menu__traducir{
-    position: relative;
-    display: inline-block;
-}
-.menu__idioma{
-    position: absolute;
-    display: none;
-    top: 30px;
-}
-.menu__traducir:hover .menu__idioma{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-}
-.menu__opcion{
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 2.5px auto;
-    text-align: center;
-    border-radius: 5px;
-    background-color: #01c38f4e;
-}
-.menu__opcion{
-    height: auto;
-    padding: 10px 0;
 }
 /* ---------- Style de los encabezados ---------- */
 .encabezado{
@@ -224,6 +144,7 @@ nav{
     overflow-y: hidden;
     margin: 20px auto 10px auto;
     justify-content: space-between;
+    list-style: none;
 }
 .seccion__item{
     height: auto;
@@ -232,11 +153,6 @@ nav{
 .seccion__lista article{
     width: 15rem;
     margin-right: 40px;
-}
-.seccion--historia{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 }
 .seccion__subtitulo{
     font-size: 1.5rem;
@@ -253,13 +169,7 @@ nav{
     width: 13rem;
     margin: auto;
 }
-.seccion__datos{
-    border-color: black;
-    width: 100%;
-    text-align: center;
-}
 .seccion__datos textarea{
-    width: auto;
     height: 10rem;
 }
 .seccion__confirmar{
@@ -286,14 +196,11 @@ nav{
 }
 .seccion__archivo{
     width: 75%;
-    margin: 30px 0;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border-radius: 7px;
-    text-decoration: none;
-    border: 1px solid #ccc;
-    padding: 6px 12px;
-    cursor: pointer;
+    margin: 30px auto;
+}
+.seccion__archivo input{
+    background-color: black;
+    color: #01c38e;
 }
 .seccion__sublista{
     list-style: none;
@@ -326,7 +233,7 @@ nav{
 }
 /* ---------- Style Footer ---------- */
 .contacto{
-    padding: 0 5% 5% 5%;
+    padding: 0 5%;
     height: auto;
 }
 .contacto__redes{
@@ -345,34 +252,27 @@ nav{
 .contacto__lista{
     display: flex;
     width: auto;
+    padding: 0;
 }
 .contacto__item{
     margin: 0 10px;
     width: auto;
     list-style: none;
 }
-.contacto__sedes{
-    width: 100%;
-    color: white;
-}
 .contacto__provincias{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 10px auto 0 auto;
-    width: auto;
+    margin-top: 40px;
 }
-.contacto__localidades{
-    width: auto;
-    padding: 0 30px;
-    text-align: center;
-    font-size: 1rem;
-    list-style: none;
+.contacto__provincias .col-2{
+    margin: 10px 0;
 }
-.contacto__subtitulo--margen{
-    margin: 40px 0 10px 0;
+.contacto__provincias i{
+    color: #01c38e;
+}
+.contacto__direccion, .contacto__telefono{
+    margin: 10px 0;
+}
+.contacto__subtitulo{
+    margin-bottom: 10px;
     font-size: 1.5rem;
     font-family: 'Rubik', sans-serif;
     color: #01c38e;
@@ -383,7 +283,7 @@ nav{
     margin: 50px 0;
 }
 .legales{
-    padding: 4%;
+    padding: 4% 4% 1% 4%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -393,7 +293,7 @@ nav{
 .legales__lista{
     width: 40rem;
     display: block;
-    margin-bottom: 10px;
+    padding: 0;
 }
 .legales__item{
     width: 10rem;
@@ -407,6 +307,7 @@ nav{
     text-decoration: none;
     color:#01c38e;
     width: auto;
+    font-size: 0.8rem;
 }
 .legales__derechos{
     text-align: center;
@@ -498,14 +399,41 @@ nav{
     margin-bottom: 30px;
     padding: 3%;
 }
-.seccion__formulario{
-    margin-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width:100%;
+.seccion__formulario .col-lg-6{
+    margin: 50px 0;
 }
+.seccion__fieldset{
+    border: 1px solid #01c38e;
+    border-radius: 10px;
+    padding: 10px 0 50px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.seccion__fieldset legend{
+    background-color: black;
+    position: relative;
+    color: #01c38e;
+    font-family: 'Hind Siliguri', sans-serif;
+    top: -30px;
+    left: 15%;
+    font-size: 1.4rem;
+    width: 70%;
+}
+.seccion__fieldset input{
+    border-radius: 10px;
+    width: 80%;
+    height: 2.3rem;
+    text-align: center;
+}
+.seccion__fieldset label{
+    color: #01c38e;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    display: block;
+    margin: 40px 0 10px 0;
+}
+
 /* ---------- Style Contacto ---------- */
 .encabezado--contacto{
     background-image: url('../assets/portadas/sedes-header.jpg');
@@ -513,18 +441,13 @@ nav{
 .seccion__texto--margen{
     margin-bottom: 30px;
 }
-.seccion__texto--label{
-    color: #01c38e;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-size: 1rem;
-    line-height: 1rem;
-    display: block;
-    margin: 40px 0 20px 0;
-}
-.seccion__leyenda{
-    color: #01c38e;
-    padding: 0 40px;
-    font-family: 'Hind Siliguri', sans-serif;
+.seccion__ubicaciones{
+    width: 100%;
+    padding: 1%;
+    margin: 100px auto -100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .seccion__ubicaciones{
     width: 100%;
@@ -668,16 +591,9 @@ nav{
 .encabezado--nosotros{
     background-image: url('../assets/portadas/quienes-somos-header.jpg');
 }
-.seccion__articulo--posicion{
-    width: auto;
-    text-align: left;
-    margin: 20px auto;
-    align-items: center;
-}
-.seccion__imagen--posicion{
-    width: 90%;
-    border-radius: 7px;
-    margin: 10px auto;
+.seccion__imagen--nosotros{
+    width: 80%;
+    border-radius: 10px;
 }
 .seccion__texto--primario{
     color: #01c38e;
@@ -689,6 +605,7 @@ nav{
 .seccion__tiempo{
     list-style-type: none;
     height: auto;
+    padding: 0;
 }
 .seccion__tiempo li {
     height: auto;
@@ -696,7 +613,6 @@ nav{
     margin-bottom: 30px;
 }
 .seccion__tiempo li p {
-    margin-left: 20px;
     margin-top: 10px;
     text-decoration: none;
     color: white;
@@ -747,17 +663,6 @@ nav{
         padding: 0 5%;
         justify-content: space-between;
     }
-    /*Style Quienes Somos*/
-    .seccion__articulo--posicion{
-        width: 90%;
-        text-align: left;
-        margin: 20px auto;
-    }
-    .seccion__imagen--posicion{
-        width: 80%;
-        border-radius: 7px;
-        margin: 10px auto;
-    }
 }
 /*Diseño responsive(Media Query mayor a 600px)*/
 @media screen and (min-width: 600px) {
@@ -778,17 +683,6 @@ nav{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-    /*Style Quienes Somos*/
-    .seccion__articulo--posicion{
-        width: 85%;
-        text-align: left;
-        margin: 20px auto;
-    }
-    .seccion__imagen--posicion{
-        width: 75%;
-        border-radius: 7px;
-        margin: 10px auto;
     }
     /*Style Contacto (galeria)*/
     .seccion__galeria{
@@ -820,20 +714,6 @@ nav{
     .seccion__entrada{
         width: 60%;
     }
-    .contacto__provincias{
-        justify-content: space-around;
-    }
-    /*Style Quienes Somos*/
-    .seccion__articulo--posicion{
-        width: 55%;
-        text-align: left;
-        margin: 20px auto;
-    }
-    .seccion__imagen--posicion{
-        width: 40%;
-        border-radius: 7px;
-        margin: 10px auto;
-    }
     /* Style linea de tiempo */
     .seccion__tiempo{
         list-style-type: none;
@@ -862,7 +742,6 @@ nav{
         margin-top: 30px;
     }
     .seccion__tiempo li p {
-        margin-left: 0;
         margin-top: 20px;
         display: none;
     }
@@ -872,9 +751,15 @@ nav{
     }
 }
 @media screen and (min-width: 992px) {
+    .offcanvas, .offcanvas-body, .offcanvas-header{
+        background-color: rgba(0, 0, 0, 0);
+    }
     .navbar-nav{
         justify-content: end;
         flex-grow: 1;
+    }
+    .nav-item{
+        margin: 0 0 0 10px;
     }
 }
 /*Diseño responsive(Media Query mayor a 1024px)*/
@@ -920,26 +805,6 @@ nav{
     .seccion__entrada{
         width: 50%;
     }
-    /*Style Quienes Somos*/
-    .seccion__articulo--posicion{
-        width: 50%;
-        text-align: left;
-        margin: 20px auto;
-    }
-    .seccion__imagen--posicion{
-        width: 35%;
-        border-radius: 7px;
-        margin: 10px auto;
-    }
-    .seccion__formulario{
-        width: 90%;
-        margin: 40px auto 0 auto;
-        align-items: center;
-        justify-content: center;
-    }
-    .seccion__formulario fieldset{
-        border-color: #01c38e;
-    }
     .seccion__datos{
         width: 50%;
     }
@@ -979,10 +844,9 @@ nav{
 }
 
 /* Animaciones */
-.menu__pagina a:hover{
+.nav-item a:hover{
     animation-duration: 4s;
     animation-name: menu__secciones;
-    transform: scale(1.1);
 }
 @keyframes menu__secciones{
     0%{
