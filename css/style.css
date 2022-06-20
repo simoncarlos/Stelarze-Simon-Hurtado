@@ -9,7 +9,7 @@ body{
 /* ---------- Style del Menu ---------- */
 nav{
     height: 80px;
-    background-image: linear-gradient(black, black, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.137));
+    background-image: linear-gradient(black, black, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0));
     color: white;
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 1rem;
@@ -764,35 +764,6 @@ nav{
 }
 /*Diseño responsive(Media Query mayor a 1024px)*/
 @media screen and (min-width: 1024px) {
-    .menu__boton{
-        display: none;
-    }
-    .menu{
-        flex-direction: row;
-        font-family: 'Hind Siliguri', sans-serif;
-        font-size: 1rem;
-    }
-    .menu__secciones{
-        position: static;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 70%;
-        height: 100px;
-    }
-    .menu__pages{
-        display: flex;
-    }
-    .menu__pagina{
-        padding: 10px 0;
-    }
-    .menu__traducir{
-        position: relative;
-        display: inline-block;
-    }
-    .menu__pagina a{
-        padding: 0 20px;
-    }
     .seccion{
         padding: 4%;
     }
