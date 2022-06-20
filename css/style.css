@@ -449,14 +449,6 @@ nav{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.seccion__ubicaciones{
-    width: 100%;
-    padding: 1%;
-    margin: 100px auto -100px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 .seccion__sede{
     width: 25rem;
     padding: 0 10px;
