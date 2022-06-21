@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- inicio barra de navegacion -->
@@ -21,19 +20,19 @@
             <a href="../index.html" class="navbarbrand menu__enlace">
                 <img src="../assets/logos/logo-white.png" class="menu__logo" alt="Logo de Stelarze">
             </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <div class="navbar__boton">
-                <span class="navbar__barra--1"></span>
-                <span class="navbar__barra--2"></span>
-                <span class="navbar__barra--3"></span>
-            </div>
-          </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <div class="navbar__boton">
+                    <span class="navbar__barra--1"></span>
+                    <span class="navbar__barra--2"></span>
+                    <span class="navbar__barra--3"></span>
+                </div>
+            </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
                 <div class="offcanvas-header">
                     <a href="../index.html" class="navbarbrand menu__enlace">
                         <img src="../assets/logos/logo-white.png" class="menu__logo" alt="Logo de Stelarze">
                     </a>
-                    <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                    <button type="button" class="btn-close bg-light btn-close-white" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav align-items-center">
@@ -96,39 +95,49 @@
             <h2 class="seccion__titulo">Nuestro Equipo</h2>
             <ul class="seccion__lista--personal">
                 <li class="seccion__item--personal">
-                    <article>
-                        <img src="../assets/perfiles/aguilar-front.jpg" class="seccion__icono seccion__icono--bordes" alt="Foto de Perfil de Aguilar">
-                        <h3 class="seccion__texto--primario">Nombre y Apellido</h3>
-                        <small class="seccion__texto">Analista de Negocios y Consultor BI</small>
-                    </article>
+                    <div class="card">
+                        <img src="../assets/perfiles/aguilar-front.jpg" alt="Foto de perfil de Francisco">
+                        <div class="card-body">
+                          <h5 class="card-title">Francisco Aguilar</h5>
+                          <p class="card-text">Analista de Negocios y Consultor BI</p>
+                        </div>
+                    </div>
                 </li>
                 <li class="seccion__item--personal">
-                    <article>
-                        <img src="../assets/perfiles/chris-data.jpg" class="seccion__icono seccion__icono--bordes" alt="Foto de Perfil de Chris">
-                        <h3 class="seccion__texto--primario">Nombre y Apellido</h3>
-                        <small class="seccion__texto">Analista de Negocios y Consultor BI</small>
-                    </article>
+                    <div class="card">
+                        <img src="../assets/perfiles/chris-data.jpg" alt="Foto de perfil de Christian">
+                        <div class="card-body">
+                          <h5 class="card-title">Christian Azcoaga</h5>
+                          <p class="card-text">Analista de Negocios y Consultor BI</p>
+                        </div>
+                    </div>
                 </li>
                 <li class="seccion__item--personal">
-                    <article>
-                        <img src="../assets/perfiles/diana-coder.jpg" class="seccion__icono seccion__icono--bordes" alt="Foto de Perfil de Diana">
-                        <h3 class="seccion__texto--primario">Nombre y Apellido</h3>
-                        <small class="seccion__texto">Analista de Negocios y Consultor BI</small>
-                    </article>
+                    <div class="card">
+                        <img src="../assets/perfiles/diana-coder.jpg" alt="Foto de perfil de Diana">
+                        <div class="card-body">
+                          <h5 class="card-title">Diana Martinez</h5>
+                          <p class="card-text">Analista de Negocios y Consultor BI</p>
+                        </div>
+                    </div>
                 </li>
                 <li class="seccion__item--personal">
-                    <article>
-                        <img src="../assets/perfiles/julia-ux-ui.jpg" class="seccion__icono seccion__icono--bordes" alt="Foto de Perfil de Julia">
-                        <h3 class="seccion__texto--primario">Nombre y Apellido</h3>
-                        <small class="seccion__texto">Analista de Negocios y Consultor BI</small>
-                    </article>
+                    <div class="card">
+                        <img src="../assets/perfiles/julia-ux-ui.jpg" alt="Foto de perfil de Julia">
+                        <div class="card-body">
+                          <h5 class="card-title">Julia Villela</h5>
+                          <p class="card-text">Analista de Negocios y Consultor BI</p>
+                        </div>
+                    </div>
                 </li>
                 <li class="seccion__item--personal">
-                    <article>
-                        <img src="../assets/perfiles/martin-proyect.jpg" class="seccion__icono seccion__icono--bordes" alt="Foto de Perfil de Martin">
-                        <h3 class="seccion__texto--primario">Nombre y Apellido</h3>
-                        <small class="seccion__texto">Analista de Negocios y Consultor BI</small>
-                    </article>
+                    <div class="card">
+                        <img src="../assets/perfiles/martin-proyect.jpg" alt="Foto de perfil de Martin">
+                        <div class="card-body">
+                          <h5 class="card-title">Martin Francisco</h5>
+                          <p class="card-text">Analista de Negocios y Consultor BI</p>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -136,25 +145,25 @@
             <h2 class="seccion__titulo">Historia</h2>
             <div class="seccion__contenedor">
                 <ul class="seccion__tiempo">
-                    <li class="seccion__fecha seccion__fecha--primero">
+                    <li class="seccion__fecha">
                         <article>
                             <span class="seccion__año">1980</span>
                             <p class="seccion__texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sapiente alias dolor laborum in quia explicabo distinctio.</p>
                         </article>
                     </li>
-                    <li class="seccion__fecha seccion__fecha--medio">
+                    <li class="seccion__fecha">
                         <article>
                             <span class="seccion__año">1998</span>
                             <p class="seccion__texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sapiente alias dolor laborum in quia explicabo distinctio.</p>
                         </article>
                     </li>
-                    <li class="seccion__fecha seccion__fecha--medio">
+                    <li class="seccion__fecha">
                         <article>
                             <span class="seccion__año">2005</span>
                             <p class="seccion__texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sapiente alias dolor laborum in quia explicabo distinctio.</p>
                         </article>
                     </li>
-                    <li class="seccion__fecha seccion__fecha--ultimo">
+                    <li class="seccion__fecha">
                         <article>
                             <span class="seccion__año">2022</span>
                             <p class="seccion__texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sapiente alias dolor laborum in quia explicabo distinctio.</p>
