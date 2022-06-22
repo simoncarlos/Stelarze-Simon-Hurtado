@@ -1,3 +1,3 @@
 # Stelarze-Simon-Hurtado
 
-Entrega de Bootstrap junto con desafio complementario de Bootstrap
+Segunda entrega del proyecto final
