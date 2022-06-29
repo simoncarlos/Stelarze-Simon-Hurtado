@@ -70,7 +70,9 @@
     </nav>
     <!-- fin barra de navegacion -->
     <!-- inicio del encabezado -->
-    <header class="encabezado encabezado--contacto">
+    <header class="encabezado">
+        <div class="encabezado--contacto"></div>
+        <div class="encabezado__degradado"></div>
         <article class="encabezado__articulo">
 		    <h1 class="encabezado__titulo">Contacto</h1>
             <p class="encabezado__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non recusandae delectus nisi ratione fugit et, ex inventore at praesentium, repellat aut rem perferendis accusamus corrupti optio dolore incidunt, vero quisquam?</p>
@@ -125,11 +127,11 @@
                             <fieldset class="seccion__fieldset">
                                 <legend>Informacion del contacto</legend>
                                 <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" id="nombre" placeholder="Carlos Diego">
+                                <input type="text" name="nombre" id="nombre" placeholder="Carlos Diego" class="seccion__entrada">
                                 <label for="apellido">Apellido</label>
-                                <input type="text" name="apellido" id="apellido" placeholder="Simon Hurtado">
+                                <input type="text" name="apellido" id="apellido" placeholder="Simon Hurtado" class="seccion__entrada">
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email" placeholder="mail@algo.com">
+                                <input type="text" name="email" id="email" placeholder="mail@algo.com" class="seccion__entrada">
                             </fieldset>
                         </div>
                         <div class="col-lg-6 text-center">
@@ -139,8 +141,8 @@
                     </div>
                 </div>
                 <div class="seccion__confirmar">
-                    <input type="submit" value="enviar" class="seccion__boton--empleos">
-                    <input type="reset" value="cancelar" class="seccion__boton--empleos">
+                    <input type="submit" value="enviar" class="seccion__boton--input">
+                    <input type="reset" value="cancelar" class="seccion__boton--input">
                 </div>
             </form>
             <!-- fin del formulario de contacto -->

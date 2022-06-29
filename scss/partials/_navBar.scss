@@ -1,0 +1,96 @@
+/* ---------- Style del Menu ---------- */
+nav{
+    height: 100px;
+    background-image: linear-gradient($primaryBackgroundColor, $primaryBackgroundColor, $secondaryBackgroundColor, transparent);
+    color: $tertiaryColor;
+    font-weight: $fontTextWeight;
+    line-height: 24px;
+    font-size: $fontTextMd;
+    img{
+        width: 8rem;
+    }
+    span{
+        display: block;
+        background-color: $tertiaryColor;
+        border-radius: 15px;
+    }
+}
+.navbar-toggler{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown{
+    border: 1px solid $tertiaryColor;
+    border-radius: 10px;
+    padding: 5px 10px;
+    &-menu{
+        background-color: rgba(17, 18, 18, 0.329);
+        width: auto;
+        li{
+            width: auto;
+        }
+        .dropdown-item{
+            background-color: rgba(17, 18, 18, 0);
+            color: $tertiaryColor;
+            width: auto;
+            font-size: $fontTextMd;
+        }
+    }
+}
+.navbar__boton{
+    width: 20px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .navbar__barra--1{
+        margin-right: 40%;
+        width: 60%;
+        height: 2px;
+    }
+    .navbar__barra--2{
+        width: 100%;
+        height: 2px;
+    }
+    .navbar__barra--3{
+        width: 60%;
+        margin-left: 40%;
+        height: 2px;
+    }
+}
+.offcanvas, .offcanvas-body{
+    background-color: $secondaryBackgroundColor;
+}
+.offcanvas-header{
+    background-color: $secondaryBackgroundColor;
+    button{
+        width: 15px;
+        height: 15px;
+    }
+}
+.container-fluid{
+    padding: 0 5%;
+}
+.nav-item{
+    a, button{
+        color: $tertiaryColor;
+    }
+    text-align: center;
+    margin: 15px 0 0 0;
+    a:hover{
+        animation-duration: 4s;
+        animation-name: menu__secciones;
+    }
+}
+@keyframes menu__secciones{
+    0%{
+        color: $tertiaryColor;
+    }
+    20% {
+        color: $primaryBackgroundColor;
+    }
+    30%, 100%{
+        color: $primaryColor;
+    }
+}

@@ -70,9 +70,11 @@
     </nav>
     <!-- fin barra de navegacion -->
     <!-- inicio del encabezado -->
-    <header class="encabezado encabezado--empleo">
+    <header class="encabezado">
+        <div class="encabezado--empleo"></div>
+        <div class="encabezado__degradado"></div>
         <article class="encabezado__articulo">
-		    <h1 class="encabezado__titulo">Trabaja con nosotros</h1>
+		    <h1 class="encabezado__titulo">“El compromiso individual con el <span>esfuerzo colectivo</span> es lo que hace que un equipo funcione”</h1>
             <p class="encabezado__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non recusandae delectus nisi ratione fugit et, ex inventore at praesentium, repellat aut rem perferendis accusamus corrupti optio dolore incidunt, vero quisquam?</p>
         </article>
     </header>
@@ -81,40 +83,44 @@
     <main>
         <section class="seccion seccion--padding">
             <h2 class="seccion__titulo">Beneficios</h2>
-            <ul class="seccion__lista">
-                <li class="seccion__item">
+            <div class="seccion__lista">
+                <div class="seccion__item">
                     <article>
                         <img src="../assets/logos/tuenti-logo.png" class="seccion__icono seccion__icono--beneficios" alt="Logo de Tuenti">
-                        <h3 class="seccion__subtitulo">Lineas gratuitas</h3>
+                        <h3 class="seccion__subtitulo">Lineas <br> gratuitas</h3>
                         <p class="seccion__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum officiis ex commodi.</p>
                     </article>
-                </li>
-                <li class="seccion__item">
+                </div>
+                <div class="seccion__item">
                     <article>
                         <img src="../assets/logos/hospital-italiano-logo.png" class="seccion__icono" alt="Logo de Hospital Italiano">
                         <h3 class="seccion__subtitulo">Medicina Prepaga</h3>
                         <p class="seccion__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum officiis ex commodi.</p>
                     </article>
-                </li>
-                <li class="seccion__item">
+                </div>
+                <div class="seccion__item">
                     <article>
                         <img src="../assets/logos/qatar-airways-logo.png" class="seccion__icono" alt="Logo de Qatar Airways">
                         <h3 class="seccion__subtitulo">Convenio Aerolineas</h3>
                         <p class="seccion__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum officiis ex commodi.</p>
                     </article>
-                </li>
-                <li class="seccion__item">
+                </div>
+                <div class="seccion__item">
                     <article>
                         <img src="../assets/logos/paramount-logo.png" class="seccion__icono" alt="Logo de Paramount">
                         <h3 class="seccion__subtitulo">Paramount + Gratis</h3>
                         <p class="seccion__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum officiis ex commodi.</p>
                     </article>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
-        <section class="seccion seccion--padding"> 
-            <h2 class="seccion__titulo seccion__titulo--margen">Programa de referidos</h2>
-            <p class="seccion__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam sapiente aut mollitia illo quo doloremque at, quaerat delectus excepturi adipisci illum quae ut perferendis vitae. Saepe magni quam distinctio!</p>
+        <section class="seccion seccion--referido"> 
+            <div class="seccion__referido--fondo"></div>
+            <div class="seccion__degradado"></div>
+            <div class="seccion__articulo">
+                <h2 class="seccion__titulo seccion__titulo--margen">Programa de referidos</h2>
+                <p class="seccion__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam sapiente aut mollitia illo quo doloremque at, quaerat delectus excepturi adipisci illum quae ut perferendis vitae. Saepe magni quam distinctio!</p>
+            </div>
         </section>
         <section class="seccion">
             <h2 class="seccion__titulo">¡Te estamos buscando!</h2>
@@ -126,11 +132,11 @@
                             <fieldset class="seccion__fieldset">
                                 <legend>Informacion del postulante</legend>
                                 <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" id="nombre" placeholder="Carlos Diego">
+                                <input type="text" name="nombre" id="nombre" placeholder="Carlos Diego" class="seccion__entrada">
                                 <label for="apellido">Apellido</label>
-                                <input type="text" name="apellido" id="apellido" placeholder="Simon Hurtado">
+                                <input type="text" name="apellido" id="apellido" placeholder="Simon Hurtado" class="seccion__entrada">
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email" placeholder="mail@algo.com">
+                                <input type="text" name="email" id="email" placeholder="mail@algo.com" class="seccion__entrada">
                             </fieldset>
                         </div>
                         <div class="col-lg-6 text-center">
@@ -144,8 +150,8 @@
                     </div>
                 </div>
                 <div class="seccion__confirmar">
-                    <input type="submit" value="enviar" class="seccion__boton--empleos">
-                    <input type="reset" value="cancelar" class="seccion__boton--empleos">
+                    <input type="submit" value="enviar" class="seccion__boton--input">
+                    <input type="reset" value="cancelar" class="seccion__boton--input">
                 </div>
             </form>
         </section>

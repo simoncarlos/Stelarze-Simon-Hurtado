@@ -1,0 +1,84 @@
+/* ---------- Style Footer ---------- */
+.contacto{
+    padding: 0 5%;
+    height: auto;
+    &__redes{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    &__lista{
+        display: flex;
+        width: auto;
+        padding: 0;
+    }
+    &__item{
+        margin: 0 10px;
+        width: auto;
+        list-style: none;
+    }
+    &__logo{
+        width: 1.5rem;
+    }
+    &__provincias{
+        margin-top: 40px;
+        .col-2{
+            margin: 10px 0;
+        }
+    }
+    &__subtitulo{
+        margin-bottom: 10px;
+        font-size: $fontSubsubtitleSm;
+        font-weight: $fontTitleWeight;
+        color: $primaryColor;
+    }
+    &__direccion, &__telefono{
+        margin: 10px 0;
+    }
+    i{
+        color: $primaryColor;
+    }
+    &__enlaces{
+        text-decoration: none;
+        color: $tertiaryColor;
+        margin: 50px 0;
+        font-size: $fontSmallMd;
+        font-weight: $fontTextWeight;
+    }
+}
+.legales{
+    padding: 4% 4% 1% 4%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    &__lista{
+        width: 40rem;
+        display: block;
+        padding: 0;
+    }
+    &__item{
+        width: 10rem;
+        margin: 0 auto;
+        justify-content: space-between;
+        text-align: center;
+        list-style: none;
+    }
+    &__enlaces{
+        text-decoration: none;
+        color: $primaryColor;
+        width: auto;
+        font-size: $fontSmallMd;
+        font-weight: $fontTextWeight;
+    }
+    &__derechos{
+        text-align: center;
+        color: $primaryColor;
+        font-size: $fontSmallMd;
+        font-weight: $fontTextWeight;
+    }
+}
+  

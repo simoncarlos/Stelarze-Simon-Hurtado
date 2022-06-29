@@ -1,0 +1,155 @@
+/*Diseño responsive(Media Query mayor a 480px)*/
+@media screen and (min-width: 480px){
+    /*Style Home*/
+    .contacto__redes{
+        padding: 0 5%;
+        justify-content: space-between;
+    }
+}
+/*Diseño responsive(Media Query mayor a 600px)*/
+@media screen and (min-width: 600px){
+    .seccion{
+        padding: 6%;
+        &__articulo{
+            padding: 10%;
+        }
+        &__galeria{
+            grid-template-areas: "primero segundo segundo tercero" "cuarto  cuarto  quinto  sexto" "septimo octavo  noveno  noveno";
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 8rem);
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+        }
+    }
+    .legales__lista{
+        width: 40rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+/*Diseño responsive(Media Query mayor a 768px)*/
+@media screen and (min-width: 768px){
+    .encabezado__articulo{
+        width: 80%;
+    }
+    .encabezado__titulo{
+        font-size: $fontTitleMd;
+        letter-spacing: -2.24px;
+        line-height: 52px;
+    }
+    .encabezado__texto, .encabezado__boton{
+        font-size: $fontTextMd;
+        line-height: 16.9px;
+    }
+    .seccion{
+        padding: 5%;
+        text-align: center;
+        &__articulo{
+            padding: 15%;
+        }
+        &__entrada{
+            width: 60%;
+        }
+        &__galeria{
+            grid-template-rows: repeat(3, 8rem);
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .offcanvas, .offcanvas-body, .offcanvas-header{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .navbar-nav{
+        justify-content: end;
+        flex-grow: 1;
+    }
+    .nav-item{
+        margin: 0 0 0 10px;
+    }
+}
+/*Diseño responsive(Media Query mayor a 1024px)*/
+@media screen and (min-width: 1024px){
+    .encabezado__articulo{
+        width: 60%;
+    }
+    .encabezado__titulo{
+        font-size: $fontTitleXl;
+        letter-spacing: -2.24px;
+        line-height: 64px;
+    }
+    .encabezado__texto, .encabezado__boton{
+        font-size: $fontTextXl;
+        line-height: 20.8px;
+    }
+    .seccion{
+        padding: 4%;
+        &__articulo{
+            padding: 17%;
+        }
+        &__entrada{
+            width: 50%;
+        }
+        &__datos {
+            width: 50%;
+            .seccion__entrada{
+                width: 80%;
+            }
+        }
+        &__confirmar{
+            width: 50%;
+            margin: 0 auto;
+        }
+        &__galeria{
+            grid-template-areas: "primero primero segundo segundo segundo segundo tercero tercero" "primero primero segundo segundo segundo segundo tercero tercero" "cuarto  cuarto  cuarto  cuarto  quinto  quinto  tercero tercero" "cuarto  cuarto  cuarto  cuarto  quinto  quinto  noveno  noveno" "sexto   sexto   septimo septimo octavo  octavo  noveno  noveno" "sexto   sexto   septimo septimo octavo  octavo  noveno  noveno";
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(6, 5rem);
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+        }
+        &__tiempo{
+            list-style-type: none;
+            max-width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            li p{
+                margin-top: 20px;
+            }
+        }
+        &__fecha{
+            float: left;
+            position: relative;
+            text-align: center;
+            width: 25%;
+            margin-bottom: 10px;
+            padding: 3%;
+            &:not(:last-child)::after{
+                top: 59%;
+                right: 0;
+                width: 15%;
+                height: 5px;
+                border-radius: 10px 0 0 10px;
+            }
+            &:not(:first-child)::before{
+                top: 59%;
+                left: 0;
+                width: 15%;
+                height: 5px;
+                border-radius: 0 10px 10px 0;
+            }
+            article{
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+        &__contenedor{
+            margin-bottom: 50px;
+        }
+    }
+}
+/*Diseño responsive(Media Query mayor a 1200px)*/
+@media screen and (min-width: 1200px){
+    .seccion__articulo {
+        padding: 20%;
+    }
+}

@@ -1,0 +1,344 @@
+/* ----------- Style Pagina Principal(home) ---------- */
+.seccion__icono {
+    width: 30%;
+}
+.seccion__laboral--fondo {
+    background-image: url("../assets/portadas/empleo.jpg");
+}
+.seccion__nosotros--fondo {
+    background-image: url("../assets/portadas/quienes-somos.jpg");
+}
+.seccion__degradado{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    z-index: 0;
+    background: linear-gradient($primaryBackgroundColor, $secondaryBackgroundColor, transparent, transparent, $secondaryBackgroundColor, $primaryBackgroundColor);
+    opacity: 1;
+}
+.seccion__articulo {
+    position: absolute;
+    padding: 0 5%;
+    left: 50;
+    top: 50;
+    z-index: 1;
+    &--derecha {
+        text-align: right;
+    }
+}
+.seccion__clientes--wrap {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+        width: auto;
+        text-align: center;
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    img {
+        width: 6rem;
+        opacity: 0.5;
+        &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        transition: all 1s;
+        }
+    }
+}
+.seccion__item--ancho {
+    width: 19%;
+}
+.seccion__galeria {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-areas: "primero" "segundo" "tercero" "cuarto" "quinto" "sexto" "septimo" "octavo" "noveno";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 9rem);
+    grid-row-gap: 10px;
+    margin-top: 50px;
+    h3 {
+        font-size: $fontTextMd;
+    }
+    p {
+        font-size: $fontTextSm;
+        color: $tertiaryColor;
+    }
+}
+.seccion__fotografia {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 40%;
+    filter: blur(2px);
+    &:hover {
+        opacity: 100%;
+        filter: blur(0px);
+    }
+    article {
+        width: 70%;
+        padding: 3%;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, 0.374);
+    }
+    &--primero {
+        grid-area: primero;
+        background-image: url("../assets/galeria/oficina--caba--1.jpg");
+    }
+    &--segundo {
+        grid-area: segundo;
+        background-image: url("../assets/galeria/oficina--caba--2.jpg");
+    }
+    &--tercero {
+        grid-area: tercero;
+        background-image: url("../assets/galeria/oficina--caba--3.jpg");
+    }
+    &--cuarto {
+        grid-area: cuarto;
+        background-image: url("../assets/galeria/oficina--mendoza--1.jpg");
+    }
+    &--quinto {
+        grid-area: quinto;
+        background-image: url("../assets/galeria/oficina--mendoza--2.jpg");
+    }
+    &--sexto {
+        grid-area: sexto;
+        background-image: url("../assets/galeria/oficina--mendoza--3.jpg");
+    }
+    &--septimo {
+        grid-area: septimo;
+        background-image: url("../assets/galeria/oficina--usuahia--1.jpg");
+    }
+    &--octavo {
+        grid-area: octavo;
+        background-image: url("../assets/galeria/oficina--usuahia--2.jpg");
+    }
+    &--noveno {
+        grid-area: noveno;
+        background-image: url("../assets/galeria/oficina--usuahia--3.jpg");
+    }
+}
+/* ----------- Style Servicios ---------- */
+.seccion__garantia--fondo {
+    background-image: url("../assets/portadas/garantia.jpg");
+}
+.seccion__ayuda--fondo {
+    background-image: url("../assets/portadas/mesa-de-ayuda.jpg");
+}
+/* ---------- Style Empleos(oportunidades) ----------- */
+.seccion__referido--fondo {
+    background-image: url("../assets/portadas/entrevista-header.jpg");
+}
+.seccion__datos--margin {
+    margin-bottom: 30px;
+    padding: 3%;
+}
+.seccion__formulario .col-lg-6 {
+    margin: 50px 0;
+}
+.seccion__fieldset {
+    border: 1px solid $primaryColor;
+    border-radius: 10px;
+    padding: 10px 0 50px 0;
+    width: 100%;
+    margin: 0 auto;
+    legend {
+        background-color: $primaryBackgroundColor;
+        position: relative;
+        color: $primaryColor;
+        top: -30px;
+        left: 15%;
+        font-weight: $fontTitleWeight;
+        font-size: $fontSubsubtitleSm;
+        width: 70%;
+    }
+    input{
+        border-radius: 10px;
+        width: 80%;
+        height: 2.3rem;
+        text-align: center;
+    }
+    label {
+        color: $primaryColor;
+        font-size: $fontTextMd;
+        font-weight: $fontTextWeight;
+        line-height: 1rem;
+        display: block;
+        margin: 40px 0 10px 0;
+    }
+}
+/* ---------- Style Contacto ---------- */
+.seccion__texto--margen {
+    margin-bottom: 30px;
+}
+.seccion__ubicaciones {
+    width: 100%;
+    padding: 1%;
+    margin: 100px auto -100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.seccion__sede {
+    width: 25rem;
+    padding: 0 10px;
+    margin-bottom: -50px;
+    article {
+        background-color: $primaryBackgroundColor;
+        width: 70%;
+        height: 150px;
+        padding: 4%;
+        border: 2px solid $tertiaryColor;
+        border-radius: 10px;
+        position: relative;
+        top: -325px;
+        left: 15%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    iframe {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        opacity: 65%;
+    }
+    h3 {
+        color: $primaryColor;
+        font-size: $fontTextXl;
+    }
+    p {
+        color: $tertiaryColor;
+        font-size: $fontTextSm;
+    }
+    a {
+        text-decoration: none;
+        font-size: $fontButtonSm;
+        color: $primaryBackgroundColor;
+        padding: 5px 15px;
+        border-radius: 10px;
+        background-color: $primaryColor;
+    }
+}
+/* ---------- Style quienes-somos(nuestra esencia) ----------*/
+/* ---------- Style Linea de Tiempo ---------- */
+.seccion__tiempo {
+    list-style-type: none;
+    height: auto;
+    padding: 0;
+    li {
+        height: auto;
+        position: relative;
+        margin-bottom: 30px;
+        p {
+        margin-top: 10px;
+        text-decoration: none;
+        color: $tertiaryColor;
+        }
+    }
+}
+.seccion__fecha {
+    padding: 9% 0;
+    article {
+        width: 100%;
+        padding: 0 15%;
+        height: auto;
+    }
+    &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        bottom: -9%;
+        margin: 0 auto;
+        height: 15%;
+        width: 5px;
+        background-color: $primaryColor;
+        border-radius: 10px;
+    }
+    &:not(:first-child)::before {
+        content: "";
+        position: absolute;
+        font-size: 10px;
+        top: -9%;
+        margin: 0 auto;
+        height: 15%;
+        width: 5px;
+        background-color: $primaryColor;
+        border-radius: 10px;
+    }
+}
+/* ---------- Fin Style Linea de Tiempo ---------- */
+.seccion--margin {
+    margin-bottom: 20%;
+}
+.seccion__lista--personal {
+    width: 100%;
+    padding: 5%;
+    white-space: nowrap;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.seccion__item--personal {
+    width: auto;
+    text-align: center;
+}
+.seccion__personal {
+    margin-right: 50px;
+    padding: 10px 0;
+    width: 16rem;
+    height: 20rem;
+    background-color: transparent;
+    border: 1px solid $secondaryColor;
+    border-radius: 10px;
+}
+.seccion__presentacion {
+    width: 90%;
+    height: auto;
+    margin: 30px auto 30px auto;
+}
+.seccion__perfil {
+    position: relative;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    filter: grayscale(0.5);
+    border-radius: 50%;
+    z-index: -1;
+}
+.seccion__foto--gradient {
+    content: " ";
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    top: -7.5rem;
+    left: 3rem;
+    border: 50%;
+    background: radial-gradient(circle, transparent 0%, $secondaryBackgroundColor 40%, $primaryBackgroundColor 70%, $primaryBackgroundColor 100%);
+    z-index: 3;
+    margin-bottom: -8rem;
+}
+.seccion__cuerpo h3 {
+    margin-bottom: 20px;
+}
+.seccion__stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    img {
+        height: 20px;
+        margin: 0 10px;
+        opacity: 0.6;
+        filter: invert(53%) sepia(97%) saturate(1578%) hue-rotate(123deg) brightness(94%) contrast(99%);
+    }
+}
