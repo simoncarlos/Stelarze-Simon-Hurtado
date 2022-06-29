@@ -324,7 +324,7 @@
     left: 3rem;
     border: 50%;
     background: radial-gradient(circle, transparent 0%, $secondaryBackgroundColor 40%, $primaryBackgroundColor 70%, $primaryBackgroundColor 100%);
-    z-index: 3;
+    z-index: 0;
     margin-bottom: -8rem;
 }
 .seccion__cuerpo h3 {

@@ -11,7 +11,7 @@
         width: 100%;
         height: 75vh;
         position: absolute;
-        z-index: -1;
+        z-index: 0;
         filter: grayscale(0.7);
         background-position-y: 50%;
         background-repeat: no-repeat;
@@ -22,7 +22,7 @@
         background-image: url('../assets/portadas/quienes-somos-header.jpg');
     }
     &--servicios{
-        background-image: url('../assets/portadas/servicios-header.png');
+        background-image: url('../assets/portadas/servicios-header.jpg');
     }
     &--empleo{
         background-image: url('../assets/portadas/equipo.jpg');
@@ -37,7 +37,7 @@
         width: 100%;
         height: 75vh;
         position: absolute;
-        z-index: 0;
+        z-index: 1;
         background: linear-gradient($primaryBackgroundColor, $secondaryBackgroundColor, transparent, transparent, $secondaryBackgroundColor, $primaryBackgroundColor);
         opacity: 1;
     }
@@ -46,7 +46,7 @@
         width: 95%;
         position: absolute;
         padding-left: 5%;
-        z-index: 99;
+        z-index: 2;
         animation-duration: 2s;
         animation-name: desplazamiento;
         animation-iteration-count: 1;
@@ -66,15 +66,15 @@
     &__texto{
         color: $tertiaryColor;
         width: 85%;
-        font-size: $fontTextMd;
+        font-size: $fontTextSm;
         line-height: 14.6px;
         font-weight: $fontTextWeight;
         margin-bottom: 50px;
     }
     &__boton{
         width: 130px;
-        font-weight: $fontTextWeight;
-        font-size: $fontButtonMd;
+        font-weight: $fontTitleWeight;
+        font-size: $fontButtonXl;
         color: $tertiaryColor;
         text-decoration: none;
         &::after{
@@ -95,7 +95,7 @@
     height: 75vh;
     position: absolute;
     right: 0;
-    z-index: -1;
+    z-index: 0;
     border-radius: 10px;
     opacity: 0.5;
 }
