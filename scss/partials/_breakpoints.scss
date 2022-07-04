@@ -23,9 +23,8 @@
     }
     .legales__lista{
         width: 40rem;
-        display: flex;
+        @include d-flex(row, center, space-around);
         flex-wrap: wrap;
-        justify-content: space-around;
     }
 }
 /*Diseño responsive(Media Query mayor a 768px)*/
@@ -34,13 +33,14 @@
         width: 80%;
     }
     .encabezado__titulo{
-        font-size: $fontTitleMd;
-        letter-spacing: -2.24px;
+        font-size: map-get($title, md);
         line-height: 52px;
     }
-    .encabezado__texto, .encabezado__boton{
-        font-size: $fontTextMd;
-        line-height: 16.9px;
+    .encabezado__texto{
+        font-size: map-get($text, md);
+    }
+    .encabezado__boton, .seccion__boton{
+        font-size: map-get($button, md);
     }
     .seccion{
         padding: 5%;
@@ -48,11 +48,48 @@
         &__articulo{
             padding: 15%;
         }
+        &__titulo{
+            font-size: map-get($subtitle, md);
+        }
+        &__subtitulo, &__sede h3{
+            font-size: map-get($subsubtitle, md);
+        }
+        &__sede p{
+            font-size: map-get($text, md);
+        }
+        &__sede a{
+            font-size: map-get($small, md);
+        }
+        &__texto{
+            font-size: map-get($text, md);
+        }
         &__entrada{
             width: 60%;
         }
+        &__fieldset label{
+            font-size: map-get($text, md);
+        }
         &__galeria{
             grid-template-rows: repeat(3, 8rem);
+            h3{
+                font-size: map-get($text, md);
+            }
+            p{
+                font-size: map-get($text, md);
+            }
+        }
+    }
+    .contacto{
+        &__subtitulo{
+            font-size: map-get($subsubtitle, xl);
+        }
+        &__enlaces{
+            font-size: map-get($text, md);
+        }
+    }
+    .legales{
+        &__enlaces, &__derechos{
+            font-size: map-get($small, md);
         }
     }
 }
@@ -74,18 +111,29 @@
         width: 60%;
     }
     .encabezado__titulo{
-        font-size: $fontTitleXl;
-        letter-spacing: -2.24px;
+        font-size: map-get($title, xl);
         line-height: 64px;
     }
-    .encabezado__texto, .encabezado__boton{
-        font-size: $fontTextXl;
-        line-height: 20.8px;
+    .encabezado__texto{
+        font-size: map-get($text, xl);
+    }
+    .encabezado__boton{
+        font-size: map-get($button, xl);
+        letter-spacing: normal;
     }
     .seccion{
         padding: 4%;
         &__articulo{
             padding: 17%;
+        }
+        &__titulo{
+            font-size: map-get($subtitle, xl);
+        }
+        &__subtitulo, &__sede h3{
+            font-size: map-get($subsubtitle, xl);
+        }
+        &__sede a{
+            font-size: map-get($small, md);
         }
         &__entrada{
             width: 50%;
@@ -106,6 +154,12 @@
             grid-template-rows: repeat(6, 5rem);
             grid-row-gap: 10px;
             grid-column-gap: 10px;
+            h3{
+                font-size: map-get($text, xl);
+            }
+            p{
+                font-size: map-get($small, xl);
+            }
         }
         &__tiempo{
             list-style-type: none;
@@ -144,6 +198,16 @@
         }
         &__contenedor{
             margin-bottom: 50px;
+        }
+    }
+    .contacto{
+        &__subtitulo{
+            font-size: map-get($subsubtitle, xl);
+        }
+    }
+    .legales{
+        &__enlaces, &__derechos{
+            font-size: map-get($small, xl);
         }
     }
 }

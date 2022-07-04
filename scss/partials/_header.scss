@@ -1,8 +1,7 @@
 /* ---------- Style de los encabezados ---------- */
 .encabezado{
     height: 95vh;
-    display: flex;
-    align-items: center;
+    @include d-flex(row, center, flex-start);
     margin-top: 50px;
     span{
         color: $primaryColor;
@@ -11,27 +10,27 @@
         width: 100%;
         height: 75vh;
         position: absolute;
-        z-index: 0;
         filter: grayscale(0.7);
-        background-position-y: 50%;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position-y: 50%;
+        z-index: 0;
         opacity: 0.4;
     }
     &--nosotros{
-        background-image: url('../assets/portadas/quienes-somos-header.jpg');
+        background-image: url('../assets/portadas/quienes-somos-header.webp');
     }
     &--servicios{
-        background-image: url('../assets/portadas/servicios-header.jpg');
+        background-image: url('../assets/portadas/servicios-header.webp');
     }
     &--empleo{
-        background-image: url('../assets/portadas/equipo.jpg');
+        background-image: url('../assets/portadas/equipo.webp');
     }
     &--contacto{
-        background-image: url('../assets/portadas/sedes-header.jpg');
+        background-image: url('../assets/portadas/sedes-header.webp');
     }
     &--legales{
-        background-image: url('../assets/portadas/legales.jpg');
+        background-image: url('../assets/portadas/legales.webp');
     }      
     &__degradado{
         width: 100%;
@@ -53,28 +52,22 @@
     }
     &__leyenda{
         color: $secondaryColor;
-        font-size: $fontSmallMd;
+        @include font($small, xl);
     }
     &__titulo{
         color: $tertiaryColor;
-        font-size: $fontTitleSm;
-        letter-spacing: -2.24px;
-        line-height: 40.42px;
-        font-weight: $fontTitleWeight;
+        @include font($title, sm);
         margin-bottom: 30px;
     }
     &__texto{
         color: $tertiaryColor;
         width: 85%;
-        font-size: $fontTextSm;
-        line-height: 14.6px;
-        font-weight: $fontTextWeight;
+        @include font($text, sm); 
         margin-bottom: 50px;
     }
     &__boton{
         width: 130px;
-        font-weight: $fontTitleWeight;
-        font-size: $fontButtonXl;
+        @include font($button, sm);
         color: $tertiaryColor;
         text-decoration: none;
         &::after{

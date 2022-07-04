@@ -3,10 +3,10 @@
     width: 30%;
 }
 .seccion__laboral--fondo {
-    background-image: url("../assets/portadas/empleo.jpg");
+    background-image: url("../assets/portadas/empleo.webp");
 }
 .seccion__nosotros--fondo {
-    background-image: url("../assets/portadas/quienes-somos.jpg");
+    background-image: url("../assets/portadas/quienes-somos.webp");
 }
 .seccion__degradado{
     width: 100%;
@@ -29,15 +29,13 @@
 .seccion__clientes--wrap {
     width: 100%;
     margin-top: 40px;
-    display: flex;
+    @include d-flex(row, center, center);
     flex-wrap: wrap;
-    justify-content: center;
     div {
         width: auto;
         text-align: center;
         margin: 1rem;
-        display: flex;
-        align-items: center;
+        @include d-flex(row, center, flex-start);
     }
     img {
         width: 6rem;
@@ -62,10 +60,10 @@
     grid-row-gap: 10px;
     margin-top: 50px;
     h3 {
-        font-size: $fontTextMd;
+        @include font($text, sm);
     }
     p {
-        font-size: $fontTextSm;
+        @include font($small, sm);
         color: $tertiaryColor;
     }
 }
@@ -73,9 +71,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include d-flex(row, center, center);
     opacity: 40%;
     filter: blur(2px);
     &:hover {
@@ -90,51 +86,51 @@
     }
     &--primero {
         grid-area: primero;
-        background-image: url("../assets/galeria/oficina--caba--1.jpg");
+        background-image: url("../assets/galeria/oficina--caba--1.webp");
     }
     &--segundo {
         grid-area: segundo;
-        background-image: url("../assets/galeria/oficina--caba--2.jpg");
+        background-image: url("../assets/galeria/oficina--caba--2.webp");
     }
     &--tercero {
         grid-area: tercero;
-        background-image: url("../assets/galeria/oficina--caba--3.jpg");
+        background-image: url("../assets/galeria/oficina--caba--3.webp");
     }
     &--cuarto {
         grid-area: cuarto;
-        background-image: url("../assets/galeria/oficina--mendoza--1.jpg");
+        background-image: url("../assets/galeria/oficina--mendoza--1.webp");
     }
     &--quinto {
         grid-area: quinto;
-        background-image: url("../assets/galeria/oficina--mendoza--2.jpg");
+        background-image: url("../assets/galeria/oficina--mendoza--2.webp");
     }
     &--sexto {
         grid-area: sexto;
-        background-image: url("../assets/galeria/oficina--mendoza--3.jpg");
+        background-image: url("../assets/galeria/oficina--mendoza--3.webp");
     }
     &--septimo {
         grid-area: septimo;
-        background-image: url("../assets/galeria/oficina--usuahia--1.jpg");
+        background-image: url("../assets/galeria/oficina--usuahia--1.webp");
     }
     &--octavo {
         grid-area: octavo;
-        background-image: url("../assets/galeria/oficina--usuahia--2.jpg");
+        background-image: url("../assets/galeria/oficina--usuahia--2.webp");
     }
     &--noveno {
         grid-area: noveno;
-        background-image: url("../assets/galeria/oficina--usuahia--3.jpg");
+        background-image: url("../assets/galeria/oficina--usuahia--3.webp");
     }
 }
 /* ----------- Style Servicios ---------- */
 .seccion__garantia--fondo {
-    background-image: url("../assets/portadas/garantia.jpg");
+    background-image: url("../assets/portadas/garantia.webp");
 }
 .seccion__ayuda--fondo {
-    background-image: url("../assets/portadas/mesa-de-ayuda.jpg");
+    background-image: url("../assets/portadas/mesa-de-ayuda.webp");
 }
 /* ---------- Style Empleos(oportunidades) ----------- */
 .seccion__referido--fondo {
-    background-image: url("../assets/portadas/entrevista-header.jpg");
+    background-image: url("../assets/portadas/entrevista-header.webp");
 }
 .seccion__datos--margin {
     margin-bottom: 30px;
@@ -155,8 +151,7 @@
         color: $primaryColor;
         top: -30px;
         left: 15%;
-        font-weight: $fontTitleWeight;
-        font-size: $fontSubsubtitleSm;
+        @include font($subsubtitle, sm);
         width: 70%;
     }
     input{
@@ -167,9 +162,7 @@
     }
     label {
         color: $primaryColor;
-        font-size: $fontTextMd;
-        font-weight: $fontTextWeight;
-        line-height: 1rem;
+        @include font($text, sm);
         display: block;
         margin: 40px 0 10px 0;
     }
@@ -182,9 +175,8 @@
     width: 100%;
     padding: 1%;
     margin: 100px auto -100px auto;
-    display: flex;
+    @include d-flex(row, center, space-evenly);
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 .seccion__sede {
     width: 25rem;
@@ -201,11 +193,8 @@
         top: -325px;
         left: 15%;
         text-align: center;
-        display: flex;
+        @include d-flex(column, center, space-around);
         flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
     }
     iframe {
         width: 100%;
@@ -215,15 +204,15 @@
     }
     h3 {
         color: $primaryColor;
-        font-size: $fontTextXl;
+        @include font($subsubtitle, sm);
     }
     p {
         color: $tertiaryColor;
-        font-size: $fontTextSm;
+        @include font($text, sm);
     }
     a {
         text-decoration: none;
-        font-size: $fontButtonSm;
+        @include font($small, sm);
         color: $primaryBackgroundColor;
         padding: 5px 15px;
         border-radius: 10px;
@@ -285,8 +274,7 @@
     padding: 5%;
     white-space: nowrap;
     overflow-x: auto;
-    display: flex;
-    align-items: center;
+    @include d-flex(row, center, flex-start);
     list-style: none;
 }
 .seccion__item--personal {
@@ -297,7 +285,7 @@
     margin-right: 50px;
     padding: 10px 0;
     width: 16rem;
-    height: 20rem;
+    height: 22rem;
     background-color: transparent;
     border: 1px solid $secondaryColor;
     border-radius: 10px;
@@ -331,9 +319,7 @@
     margin-bottom: 20px;
 }
 .seccion__stack {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include d-flex(row, center, center);
     margin: 30px auto;
     img {
         height: 20px;

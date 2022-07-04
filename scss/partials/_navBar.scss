@@ -5,7 +5,7 @@ nav{
     color: $tertiaryColor;
     font-weight: $fontTextWeight;
     line-height: 24px;
-    font-size: $fontTextMd;
+    @include font($text, md);
     img{
         width: 8rem;
     }
@@ -16,9 +16,7 @@ nav{
     }
 }
 .navbar-toggler{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include d-flex(row, center, center);
 }
 .dropdown{
     border: 1px solid $tertiaryColor;
@@ -34,16 +32,14 @@ nav{
             background-color: rgba(17, 18, 18, 0);
             color: $tertiaryColor;
             width: auto;
-            font-size: $fontTextMd;
+            @include font($text, md);
         }
     }
 }
 .navbar__boton{
     width: 20px;
     height: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @include d-flex(column, center, space-evenly);
     .navbar__barra--1{
         margin-right: 40%;
         width: 60%;

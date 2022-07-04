@@ -1,0 +1,27 @@
+@mixin d-flex($f-direction ,$align, $justify){
+    display: flex;
+    flex-direction: $f-direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+@mixin font($tipe, $size){
+
+    font-size: map-get($tipe, $size);
+
+    @if $tipe == $text or $tipe == $small {
+        font-weight: map-get($weight, text);
+        letter-spacing: map-get($spacing, text);
+        line-height: map-get($line, text);
+    }
+    @else if $tipe == $button{
+        font-weight: map-get($weight, title);
+        letter-spacing: map-get($spacing, text);
+        line-height: map-get($line, text);
+    }
+    @else{
+        font-weight: map-get($weight, title);
+        letter-spacing: map-get($spacing, title);
+        line-height: map-get($line, title);
+    }
+          
+}

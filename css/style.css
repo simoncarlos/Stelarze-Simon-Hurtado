@@ -19,7 +19,10 @@ nav {
   color: white;
   font-weight: 400;
   line-height: 24px;
-  font-size: 0.93rem; }
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 20px; }
   nav img {
     width: 8rem; }
   nav span {
@@ -29,6 +32,7 @@ nav {
 
 .navbar-toggler {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center; }
 
@@ -45,13 +49,17 @@ nav {
       background-color: rgba(17, 18, 18, 0);
       color: white;
       width: auto;
-      font-size: 0.93rem; }
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: normal;
+      line-height: 20px; }
 
 .navbar__boton {
   width: 20px;
   height: 25px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-evenly; }
   .navbar__boton .navbar__barra--1 {
     margin-right: 40%;
@@ -98,30 +106,32 @@ nav {
 .encabezado {
   height: 95vh;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   margin-top: 50px; }
   .encabezado span {
     color: #01c38e; }
-  .encabezado--servicios, .encabezado--nosotros, .encabezado--empleo, .encabezado--contacto, .encabezado--legales {
+  .encabezado--servicios, .seccion__laboral--fondo, .seccion__nosotros--fondo, .seccion__garantia--fondo, .seccion__ayuda--fondo, .seccion__referido--fondo, .encabezado--nosotros, .encabezado--empleo, .encabezado--contacto, .encabezado--legales {
     width: 100%;
     height: 75vh;
     position: absolute;
-    z-index: 0;
     filter: grayscale(0.7);
-    background-position-y: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: 50%;
+    z-index: 0;
     opacity: 0.4; }
   .encabezado--nosotros {
-    background-image: url("../assets/portadas/quienes-somos-header.jpg"); }
-  .encabezado--servicios {
-    background-image: url("../assets/portadas/servicios-header.jpg"); }
+    background-image: url("../assets/portadas/quienes-somos-header.webp"); }
+  .encabezado--servicios, .seccion__laboral--fondo, .seccion__nosotros--fondo, .seccion__garantia--fondo, .seccion__ayuda--fondo, .seccion__referido--fondo {
+    background-image: url("../assets/portadas/servicios-header.webp"); }
   .encabezado--empleo {
-    background-image: url("../assets/portadas/equipo.jpg"); }
+    background-image: url("../assets/portadas/equipo.webp"); }
   .encabezado--contacto {
-    background-image: url("../assets/portadas/sedes-header.jpg"); }
+    background-image: url("../assets/portadas/sedes-header.webp"); }
   .encabezado--legales {
-    background-image: url("../assets/portadas/legales.jpg"); }
+    background-image: url("../assets/portadas/legales.webp"); }
   .encabezado__degradado {
     width: 100%;
     height: 75vh;
@@ -140,25 +150,31 @@ nav {
     animation-iteration-count: 1; }
   .encabezado__leyenda {
     color: rgba(1, 195, 143, 0.612);
-    font-size: 0.72rem; }
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px; }
   .encabezado__titulo {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
+    font-weight: 700;
     letter-spacing: -2.24px;
     line-height: 40.42px;
-    font-weight: 700;
     margin-bottom: 30px; }
   .encabezado__texto {
     color: white;
     width: 85%;
     font-size: 0.8rem;
-    line-height: 14.6px;
     font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px;
     margin-bottom: 50px; }
   .encabezado__boton {
     width: 130px;
+    font-size: 0.9rem;
     font-weight: 700;
-    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 20px;
     color: white;
     text-decoration: none; }
     .encabezado__boton::after {
@@ -198,28 +214,27 @@ nav {
   .seccion--padding {
     padding-bottom: 0; }
   .seccion__titulo {
-    font-weight: 700;
     margin: 20px 0 30px 0;
-    font-size: 2rem;
+    font-size: 2.05rem;
+    font-weight: 700;
+    letter-spacing: -2.24px;
+    line-height: 40.42px;
     color: white; }
   .seccion--laboral, .seccion--nosotros, .seccion--garantia, .seccion--ayuda, .seccion--referido {
     margin: 60px 0;
     height: 75vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center; }
   .seccion__laboral--fondo, .seccion__nosotros--fondo, .seccion__garantia--fondo, .seccion__ayuda--fondo, .seccion__referido--fondo {
-    width: 100%;
-    height: 75vh;
-    position: absolute;
-    z-index: -1;
-    filter: grayscale(0.7);
     background-position-y: 70%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    z-index: -1;
     opacity: 0.15; }
   .seccion__lista {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin: 50px auto; }
@@ -235,11 +250,17 @@ nav {
       background: #111212;
       box-shadow: 19px 19px 40px #0c0d0d, -19px -19px 40px #161717; }
   .seccion__subtitulo {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 700;
+    letter-spacing: -2.24px;
+    line-height: 40.42px;
     margin-bottom: 20px;
     color: #01c38e; }
   .seccion__boton {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 20px;
     color: white;
     text-decoration: none;
     display: block;
@@ -264,8 +285,10 @@ nav {
     padding: 20px;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; }
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; }
   .seccion__area {
     background-color: #111212;
     color: #01c38e;
@@ -292,7 +315,9 @@ nav {
     margin-top: 30px; }
   .seccion__texto {
     font-size: 0.8rem;
-    line-height: 14.6px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px;
     font-weight: 400;
     color: white; }
   .seccion__texto--label {
@@ -334,10 +359,10 @@ nav {
   width: 30%; }
 
 .seccion__laboral--fondo {
-  background-image: url("../assets/portadas/empleo.jpg"); }
+  background-image: url("../assets/portadas/empleo.webp"); }
 
 .seccion__nosotros--fondo {
-  background-image: url("../assets/portadas/quienes-somos.jpg"); }
+  background-image: url("../assets/portadas/quienes-somos.webp"); }
 
 .seccion__degradado {
   width: 100%;
@@ -360,14 +385,18 @@ nav {
   width: 100%;
   margin-top: 40px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
   .seccion__clientes--wrap div {
     width: auto;
     text-align: center;
     margin: 1rem;
     display: flex;
-    align-items: center; }
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; }
   .seccion__clientes--wrap img {
     width: 6rem;
     opacity: 0.5; }
@@ -389,9 +418,15 @@ nav {
   grid-row-gap: 10px;
   margin-top: 50px; }
   .seccion__galeria h3 {
-    font-size: 0.93rem; }
-  .seccion__galeria p {
     font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px; }
+  .seccion__galeria p {
+    font-size: 0.66rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px;
     color: white; }
 
 .seccion__fotografia {
@@ -399,6 +434,7 @@ nav {
   background-size: cover;
   border-radius: 7px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   opacity: 40%;
@@ -413,42 +449,42 @@ nav {
     background-color: rgba(0, 0, 0, 0.374); }
   .seccion__fotografia--primero {
     grid-area: primero;
-    background-image: url("../assets/galeria/oficina--caba--1.jpg"); }
+    background-image: url("../assets/galeria/oficina--caba--1.webp"); }
   .seccion__fotografia--segundo {
     grid-area: segundo;
-    background-image: url("../assets/galeria/oficina--caba--2.jpg"); }
+    background-image: url("../assets/galeria/oficina--caba--2.webp"); }
   .seccion__fotografia--tercero {
     grid-area: tercero;
-    background-image: url("../assets/galeria/oficina--caba--3.jpg"); }
+    background-image: url("../assets/galeria/oficina--caba--3.webp"); }
   .seccion__fotografia--cuarto {
     grid-area: cuarto;
-    background-image: url("../assets/galeria/oficina--mendoza--1.jpg"); }
+    background-image: url("../assets/galeria/oficina--mendoza--1.webp"); }
   .seccion__fotografia--quinto {
     grid-area: quinto;
-    background-image: url("../assets/galeria/oficina--mendoza--2.jpg"); }
+    background-image: url("../assets/galeria/oficina--mendoza--2.webp"); }
   .seccion__fotografia--sexto {
     grid-area: sexto;
-    background-image: url("../assets/galeria/oficina--mendoza--3.jpg"); }
+    background-image: url("../assets/galeria/oficina--mendoza--3.webp"); }
   .seccion__fotografia--septimo {
     grid-area: septimo;
-    background-image: url("../assets/galeria/oficina--usuahia--1.jpg"); }
+    background-image: url("../assets/galeria/oficina--usuahia--1.webp"); }
   .seccion__fotografia--octavo {
     grid-area: octavo;
-    background-image: url("../assets/galeria/oficina--usuahia--2.jpg"); }
+    background-image: url("../assets/galeria/oficina--usuahia--2.webp"); }
   .seccion__fotografia--noveno {
     grid-area: noveno;
-    background-image: url("../assets/galeria/oficina--usuahia--3.jpg"); }
+    background-image: url("../assets/galeria/oficina--usuahia--3.webp"); }
 
 /* ----------- Style Servicios ---------- */
 .seccion__garantia--fondo {
-  background-image: url("../assets/portadas/garantia.jpg"); }
+  background-image: url("../assets/portadas/garantia.webp"); }
 
 .seccion__ayuda--fondo {
-  background-image: url("../assets/portadas/mesa-de-ayuda.jpg"); }
+  background-image: url("../assets/portadas/mesa-de-ayuda.webp"); }
 
 /* ---------- Style Empleos(oportunidades) ----------- */
 .seccion__referido--fondo {
-  background-image: url("../assets/portadas/entrevista-header.jpg"); }
+  background-image: url("../assets/portadas/entrevista-header.webp"); }
 
 .seccion__datos--margin {
   margin-bottom: 30px;
@@ -469,8 +505,10 @@ nav {
     color: #01c38e;
     top: -30px;
     left: 15%;
+    font-size: 1.3rem;
     font-weight: 700;
-    font-size: 1.6rem;
+    letter-spacing: -2.24px;
+    line-height: 40.42px;
     width: 70%; }
   .seccion__fieldset input {
     border-radius: 10px;
@@ -479,9 +517,10 @@ nav {
     text-align: center; }
   .seccion__fieldset label {
     color: #01c38e;
-    font-size: 0.93rem;
+    font-size: 0.8rem;
     font-weight: 400;
-    line-height: 1rem;
+    letter-spacing: normal;
+    line-height: 20px;
     display: block;
     margin: 40px 0 10px 0; }
 
@@ -494,8 +533,10 @@ nav {
   padding: 1%;
   margin: 100px auto -100px auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
 
 .seccion__sede {
   width: 25rem;
@@ -513,10 +554,10 @@ nav {
     left: 15%;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
   .seccion__sede iframe {
     width: 100%;
     height: 250px;
@@ -524,13 +565,22 @@ nav {
     opacity: 65%; }
   .seccion__sede h3 {
     color: #01c38e;
-    font-size: 1.14rem; }
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -2.24px;
+    line-height: 40.42px; }
   .seccion__sede p {
     color: white;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px; }
   .seccion__sede a {
     text-decoration: none;
-    font-size: 0.6rem;
+    font-size: 0.66rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px;
     color: #111212;
     padding: 5px 15px;
     border-radius: 10px;
@@ -587,7 +637,9 @@ nav {
   white-space: nowrap;
   overflow-x: auto;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   list-style: none; }
 
 .seccion__item--personal {
@@ -598,7 +650,7 @@ nav {
   margin-right: 50px;
   padding: 10px 0;
   width: 16rem;
-  height: 20rem;
+  height: 22rem;
   background-color: transparent;
   border: 1px solid rgba(1, 195, 143, 0.612);
   border-radius: 10px; }
@@ -633,6 +685,7 @@ nav {
 
 .seccion__stack {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 30px auto; }
@@ -648,12 +701,16 @@ nav {
   height: auto; }
   .contacto__redes {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%; }
   .contacto__lista {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     width: auto;
     padding: 0; }
   .contacto__item {
@@ -668,8 +725,10 @@ nav {
       margin: 10px 0; }
   .contacto__subtitulo {
     margin-bottom: 10px;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 700;
+    letter-spacing: -2.24px;
+    line-height: 40.42px;
     color: #01c38e; }
   .contacto__direccion, .contacto__telefono {
     margin: 10px 0; }
@@ -679,16 +738,19 @@ nav {
     text-decoration: none;
     color: white;
     margin: 50px 0;
-    font-size: 0.72rem;
-    font-weight: 400; }
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px; }
 
 .legales {
   padding: 4% 4% 1% 4%;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
   .legales__lista {
     width: 40rem;
     display: block;
@@ -703,13 +765,17 @@ nav {
     text-decoration: none;
     color: #01c38e;
     width: auto;
-    font-size: 0.72rem;
-    font-weight: 400; }
+    font-size: 0.66rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px; }
   .legales__derechos {
     text-align: center;
     color: #01c38e;
-    font-size: 0.72rem;
-    font-weight: 400; }
+    font-size: 0.66rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px; }
 
 /*Diseño responsive(Media Query mayor a 480px)*/
 @media screen and (min-width: 480px) {
@@ -733,29 +799,53 @@ nav {
   .legales__lista {
     width: 40rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; } }
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; } }
 
 /*Diseño responsive(Media Query mayor a 768px)*/
 @media screen and (min-width: 768px) {
   .encabezado__articulo {
     width: 80%; }
   .encabezado__titulo {
-    font-size: 3.1rem;
-    letter-spacing: -2.24px;
+    font-size: 3.2rem;
     line-height: 52px; }
-  .encabezado__texto, .encabezado__boton {
-    font-size: 0.93rem;
-    line-height: 16.9px; }
+  .encabezado__texto {
+    font-size: 0.9rem; }
+  .encabezado__boton, .seccion__boton {
+    font-size: 1.07rem; }
   .seccion {
     padding: 5%;
     text-align: center; }
     .seccion__articulo {
       padding: 15%; }
+    .seccion__titulo {
+      font-size: 2.22rem; }
+    .seccion__subtitulo, .seccion__sede h3 {
+      font-size: 1.4rem; }
+    .seccion__sede p {
+      font-size: 0.9rem; }
+    .seccion__sede a {
+      font-size: 0.72rem; }
+    .seccion__texto {
+      font-size: 0.9rem; }
     .seccion__entrada {
       width: 60%; }
+    .seccion__fieldset label {
+      font-size: 0.9rem; }
     .seccion__galeria {
-      grid-template-rows: repeat(3, 8rem); } }
+      grid-template-rows: repeat(3, 8rem); }
+      .seccion__galeria h3 {
+        font-size: 0.9rem; }
+      .seccion__galeria p {
+        font-size: 0.9rem; }
+  .contacto__subtitulo {
+    font-size: 1.5rem; }
+  .contacto__enlaces {
+    font-size: 0.9rem; }
+  .legales__enlaces, .legales__derechos {
+    font-size: 0.72rem; } }
 
 @media screen and (min-width: 992px) {
   .offcanvas, .offcanvas-body, .offcanvas-header {
@@ -772,15 +862,22 @@ nav {
     width: 60%; }
   .encabezado__titulo {
     font-size: 3.8rem;
-    letter-spacing: -2.24px;
     line-height: 64px; }
-  .encabezado__texto, .encabezado__boton {
-    font-size: 1.14rem;
-    line-height: 20.8px; }
+  .encabezado__texto {
+    font-size: 1.14rem; }
+  .encabezado__boton {
+    font-size: 1.19rem;
+    letter-spacing: normal; }
   .seccion {
     padding: 4%; }
     .seccion__articulo {
       padding: 17%; }
+    .seccion__titulo {
+      font-size: 2.4rem; }
+    .seccion__subtitulo, .seccion__sede h3 {
+      font-size: 1.5rem; }
+    .seccion__sede a {
+      font-size: 0.72rem; }
     .seccion__entrada {
       width: 50%; }
     .seccion__datos {
@@ -796,6 +893,10 @@ nav {
       grid-template-rows: repeat(6, 5rem);
       grid-row-gap: 10px;
       grid-column-gap: 10px; }
+      .seccion__galeria h3 {
+        font-size: 1.14rem; }
+      .seccion__galeria p {
+        font-size: 0.8rem; }
     .seccion__tiempo {
       list-style-type: none;
       max-width: 100%;
@@ -826,7 +927,11 @@ nav {
         width: 100%;
         margin-top: 30px; }
     .seccion__contenedor {
-      margin-bottom: 50px; } }
+      margin-bottom: 50px; }
+  .contacto__subtitulo {
+    font-size: 1.5rem; }
+  .legales__enlaces, .legales__derechos {
+    font-size: 0.8rem; } }
 
 /*Diseño responsive(Media Query mayor a 1200px)*/
 @media screen and (min-width: 1200px) {

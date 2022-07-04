@@ -2,27 +2,83 @@
 
 $primaryFont: 'DM Sans', sans-serif;
 
+$spacing:(
+    title: -2.24px,
+    text: normal
+);
+
+$line:(
+    title: 40.42px,
+    text: 20px
+);
+
+$weight: (
+    title: 700,
+    text: 400
+);
+
 $fontTitleWeight: 700;
 $fontTextWeight: 400;
 
+$title: (
+    xl: 3.8rem,
+    md: 3.2rem,
+    sm: 2.6rem
+);
+
 $fontTitleXl: 3.8rem;
-$fontTitleMd: 3.1rem;
-$fontTitleSm: 2.5rem;
+$fontTitleMd: $fontTitleXl * 0.81;
+$fontTitleSm: $fontTitleMd * 0.85;
 
-$fontSubtitleSm: 2rem;
+$subtitle: (
+    xl: 2.4rem,
+    md: 2.22rem,
+    sm: 2.05rem
+);
 
-$fontSubsubtitleSm: 1.6rem;
-$fontSubsubtitleXs: 1.4rem;
+$fontSubtitleXl: 2.4rem;
+$fontSubtitleMd: $fontSubtitleXl * 0.925;
+$fontSubtitleSm: $fontSubtitleMd * 0.925;
+
+$subsubtitle: (
+    xl: 1.5rem,
+    md: 1.4rem,
+    sm: 1.3rem
+);
+
+$fontSubsubtitleXl: 1.5rem;
+$fontSubsubtitleMd: $fontSubsubtitleXl - 0.1rem;
+$fontSubsubtitleSm: $fontSubsubtitleMd - 0.1rem;
+
+$text: (
+    xl: 1.14rem,
+    md: 0.9rem,
+    sm: 0.8rem
+);
 
 $fontTextXl: 1.14rem;
-$fontTextMd: 0.93rem;
+$fontTextMd: 0.9rem;
 $fontTextSm: 0.8rem;
 
-$fontSmallMd: 0.72rem;
+$small: (
+    xl: 0.8rem,
+    md: 0.72rem,
+    sm: 0.66rem
+);
 
-$fontButtonXl: 1rem;
-$fontButtonMd: 0.8rem;
-$fontButtonSm: 0.6rem;
+$fontSmallXl: 0.8rem;
+$fontSmallMd: 0.72rem;
+$fontSmallSm: 0.66rem;
+
+$button: (
+    xl: 1.19rem,
+    md: 1.07rem,
+    sm: 0.9rem
+);
+
+$fontButtonXl: 1.19rem;
+$fontButtonMd: 1.07rem;
+$fontButtonSm: 0.9rem;
 
 $primaryColor: rgba(1, 195, 142, 1);
 $secondaryColor: rgba(1, 195, 143, 0.612);

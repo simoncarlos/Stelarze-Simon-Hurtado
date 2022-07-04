@@ -3,14 +3,12 @@
     padding: 0 5%;
     height: auto;
     &__redes{
-        display: flex;
+        @include d-flex(row, center, center);
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
         width: 100%;
     }
     &__lista{
-        display: flex;
+        @include d-flex(row, center, flex-start);
         width: auto;
         padding: 0;
     }
@@ -30,8 +28,7 @@
     }
     &__subtitulo{
         margin-bottom: 10px;
-        font-size: $fontSubsubtitleSm;
-        font-weight: $fontTitleWeight;
+        @include font($subsubtitle, sm);
         color: $primaryColor;
     }
     &__direccion, &__telefono{
@@ -44,17 +41,14 @@
         text-decoration: none;
         color: $tertiaryColor;
         margin: 50px 0;
-        font-size: $fontSmallMd;
-        font-weight: $fontTextWeight;
+        @include font($text, sm);
     }
 }
 .legales{
     padding: 4% 4% 1% 4%;
     width: 100%;
-    display: flex;
+    @include d-flex(row, center, space-evenly);
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
     &__lista{
         width: 40rem;
         display: block;
@@ -71,14 +65,12 @@
         text-decoration: none;
         color: $primaryColor;
         width: auto;
-        font-size: $fontSmallMd;
-        font-weight: $fontTextWeight;
+        @include font($small, sm);
     }
     &__derechos{
         text-align: center;
         color: $primaryColor;
-        font-size: $fontSmallMd;
-        font-weight: $fontTextWeight;
+        @include font($small, sm)
     }
 }
   
