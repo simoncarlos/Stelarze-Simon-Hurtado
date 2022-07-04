@@ -108,7 +108,8 @@
 /*Diseño responsive(Media Query mayor a 1024px)*/
 @media screen and (min-width: 1024px){
     .encabezado__articulo{
-        width: 60%;
+        width: 55%;
+        padding-left: 10%;
     }
     .encabezado__titulo{
         font-size: map-get($title, xl);
@@ -180,6 +181,7 @@
             &:not(:last-child)::after{
                 top: 59%;
                 right: 0;
+                margin-top: 0;
                 width: 15%;
                 height: 5px;
                 border-radius: 10px 0 0 10px;
