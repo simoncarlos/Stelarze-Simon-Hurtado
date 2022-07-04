@@ -17,18 +17,11 @@ $weight: (
     text: 400
 );
 
-$fontTitleWeight: 700;
-$fontTextWeight: 400;
-
 $title: (
     xl: 3.8rem,
     md: 3.2rem,
     sm: 2.6rem
 );
-
-$fontTitleXl: 3.8rem;
-$fontTitleMd: $fontTitleXl * 0.81;
-$fontTitleSm: $fontTitleMd * 0.85;
 
 $subtitle: (
     xl: 2.4rem,
@@ -36,19 +29,11 @@ $subtitle: (
     sm: 2.05rem
 );
 
-$fontSubtitleXl: 2.4rem;
-$fontSubtitleMd: $fontSubtitleXl * 0.925;
-$fontSubtitleSm: $fontSubtitleMd * 0.925;
-
 $subsubtitle: (
     xl: 1.5rem,
     md: 1.4rem,
     sm: 1.3rem
 );
-
-$fontSubsubtitleXl: 1.5rem;
-$fontSubsubtitleMd: $fontSubsubtitleXl - 0.1rem;
-$fontSubsubtitleSm: $fontSubsubtitleMd - 0.1rem;
 
 $text: (
     xl: 1.14rem,
@@ -56,29 +41,17 @@ $text: (
     sm: 0.8rem
 );
 
-$fontTextXl: 1.14rem;
-$fontTextMd: 0.9rem;
-$fontTextSm: 0.8rem;
-
 $small: (
     xl: 0.8rem,
     md: 0.72rem,
     sm: 0.66rem
 );
 
-$fontSmallXl: 0.8rem;
-$fontSmallMd: 0.72rem;
-$fontSmallSm: 0.66rem;
-
 $button: (
     xl: 1.19rem,
     md: 1.07rem,
     sm: 0.9rem
 );
-
-$fontButtonXl: 1.19rem;
-$fontButtonMd: 1.07rem;
-$fontButtonSm: 0.9rem;
 
 $primaryColor: rgba(1, 195, 142, 1);
 $secondaryColor: rgba(1, 195, 143, 0.612);

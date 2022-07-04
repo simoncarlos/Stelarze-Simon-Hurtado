@@ -110,13 +110,11 @@
     /* ---------- Style Seccion Newsletter ----------*/
     &__texto {
         @include font($text, sm);
-        font-weight: $fontTextWeight;
         color: $tertiaryColor;
     }
     &__texto--label {
         margin-top: 30px;
         color: $primaryColor;
-        font-weight: $fontTextWeight;
     }
     &__entrada {
         width: 80%;

@@ -5,6 +5,13 @@
         padding: 0 5%;
         justify-content: space-between;
     }
+    .seccion__numero i{
+        font-size: 4rem;
+    }
+    .seccion__ilustracion img{
+        filter: blur(2px);
+        opacity: 0.4;
+    }
 }
 /*Diseño responsive(Media Query mayor a 600px)*/
 @media screen and (min-width: 600px){
@@ -13,12 +20,27 @@
         &__articulo{
             padding: 10%;
         }
+        &__portfolio{
+            margin: -100px 0 50px 0;
+            .seccion__mockup img{
+                width: 75%;
+            }
+            article{
+                padding: 0 4%;
+            }
+        }
         &__galeria{
             grid-template-areas: "primero segundo segundo tercero" "cuarto  cuarto  quinto  sexto" "septimo octavo  noveno  noveno";
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 8rem);
             grid-row-gap: 10px;
             grid-column-gap: 10px;
+        }
+        &__numero i{
+            font-size: 4.5rem;
+        }
+        &__descripcion{
+            width: 80%;
         }
     }
     .legales__lista{
@@ -63,6 +85,12 @@
         &__texto{
             font-size: map-get($text, md);
         }
+        &__descripcion{
+            width: 70%;
+        }
+        &__numero i{
+            font-size: 5rem;
+        }
         &__entrada{
             width: 60%;
         }
@@ -103,6 +131,44 @@
     }
     .nav-item{
         margin: 0 0 0 10px;
+    }
+    .seccion__etapa{
+        margin: 10% auto;
+        width: 80%;
+    }
+    .seccion__portfolio{
+        margin: -80px 0 0 0;
+        @include d-flex(row, center, center);
+        .seccion__mockup{
+            display: inline;
+            width: 40%;
+            img{
+                width: 100%;
+            }
+        }
+        article{
+            width: 40%;
+            h2, p{
+                text-align: right;
+            }
+        }
+    }
+    .seccion__ilustracion{
+        position: static;
+        z-index: 0;
+        img{
+            max-height: 50vh;
+            max-width: 80%;
+            opacity: 0.3;
+            filter: blur(3px);
+        }
+    }
+    .seccion__numero i{
+        font-size: 5rem;
+    }
+    .seccion__ilustracion img{
+        filter: blur(0px);
+        opacity: 1;
     }
 }
 /*Diseño responsive(Media Query mayor a 1024px)*/
@@ -217,5 +283,8 @@
 @media screen and (min-width: 1200px){
     .seccion__articulo {
         padding: 20%;
+    }
+    .seccion__etapa{
+        width: 70%;
     }
 }

@@ -1,6 +1,66 @@
 /* ----------- Style Pagina Principal(home) ---------- */
+.seccion__procesos{
+    width: 95%;
+    margin: 5vw auto;
+}
+.seccion__etapa{
+    margin: 30% 0;
+    @include d-flex(row, center, center);
+}
+.seccion__numero{
+    @include d-flex(row, center, center);
+    i{
+        font-size: 3rem;
+        color: $primaryColor;
+    }
+}
+.seccion__descripcion{
+    width: 100%;
+    padding-left: 3%;
+    h3, p{
+        text-align: left;
+    }
+}
+.seccion__ilustracion{
+    position: absolute;
+    z-index: -1;
+    img{
+        max-height: 35vh;
+        max-width: 80%;
+        opacity: 0.4;
+        filter: blur(1px);
+    }
+}
+.seccion__procesos:nth-child(odd) .seccion__etapa{
+    flex-direction: row-reverse;
+    text-align: right;
+    .seccion__descripcion{
+        padding-right: 3%;
+        h3, p{
+            text-align: right;
+        }
+    }
+}
+.seccion__portfolio{
+    margin: -50px 0 30px 0;
+    .seccion__mockup{
+        display: block;
+        width: 100%;
+        img{
+            width: 90%;
+            opacity: 0.7;
+        }
+    }
+    article{
+        padding: 0 6%;
+        h2, p{
+            text-align: center;
+        }
+    }
+}
 .seccion__icono {
-    width: 30%;
+    width: 50%;
+    margin-bottom: 25px;
 }
 .seccion__laboral--fondo {
     background-image: url("../assets/portadas/empleo.webp");
