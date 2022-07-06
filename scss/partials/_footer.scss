@@ -2,23 +2,39 @@
 .contacto{
     padding: 0 5%;
     height: auto;
-    &__redes{
-        @include d-flex(row, center, center);
-        flex-wrap: wrap;
+    text-align: center;
+    &__titulo{
+        @extend .seccion__titulo;
+    }
+    &__secciones{
+        margin: 5vw 0;
         width: 100%;
     }
+    & img{
+        width: 10rem;
+    }
     &__lista{
-        @include d-flex(row, center, flex-start);
+        @include d-flex(row, center, center);
+        flex-wrap: wrap;
         width: auto;
         padding: 0;
+        margin: 15px 0;
     }
     &__item{
-        margin: 0 10px;
+        margin: 10px;
         width: auto;
+        height: auto;
         list-style: none;
-    }
-    &__logo{
-        width: 1.5rem;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: $primaryColor;
+            margin: 50px 0;
+            @include font($text, md);
+            i{
+                font-size: 1.7rem;
+            }
+        }
     }
     &__provincias{
         margin-top: 40px;
@@ -41,11 +57,11 @@
         text-decoration: none;
         color: $tertiaryColor;
         margin: 50px 0;
-        @include font($text, sm);
+        @include font($small, sm);
     }
 }
 .legales{
-    padding: 4% 4% 1% 4%;
+    padding: 0% 4% 1% 4%;
     width: 100%;
     @include d-flex(row, center, space-evenly);
     flex-wrap: wrap;

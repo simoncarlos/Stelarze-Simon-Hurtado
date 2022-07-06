@@ -211,7 +211,7 @@ nav {
   /* ---------- Style Seccion Newsletter ----------*/ }
   .seccion--padding {
     padding-bottom: 0; }
-  .seccion__titulo {
+  .seccion__titulo, .contacto__titulo {
     margin: 20px 0 30px 0;
     font-size: 2.05rem;
     font-weight: 700;
@@ -751,27 +751,38 @@ nav {
 /* ---------- Style Footer ---------- */
 .contacto {
   padding: 0 5%;
-  height: auto; }
-  .contacto__redes {
+  height: auto;
+  text-align: center; }
+  .contacto__secciones {
+    margin: 5vw 0;
+    width: 100%; }
+  .contacto img {
+    width: 10rem; }
+  .contacto__lista {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%; }
-  .contacto__lista {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
     width: auto;
-    padding: 0; }
+    padding: 0;
+    margin: 15px 0; }
   .contacto__item {
-    margin: 0 10px;
+    margin: 10px;
     width: auto;
-    list-style: none; }
-  .contacto__logo {
-    width: 1.5rem; }
+    height: auto;
+    list-style: none;
+    text-align: center; }
+    .contacto__item a {
+      text-decoration: none;
+      color: #01c38e;
+      margin: 50px 0;
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: normal;
+      line-height: 20px; }
+      .contacto__item a i {
+        font-size: 1.7rem; }
   .contacto__provincias {
     margin-top: 40px; }
     .contacto__provincias .col-2 {
@@ -791,13 +802,13 @@ nav {
     text-decoration: none;
     color: white;
     margin: 50px 0;
-    font-size: 0.8rem;
+    font-size: 0.66rem;
     font-weight: 400;
     letter-spacing: normal;
     line-height: 20px; }
 
 .legales {
-  padding: 4% 4% 1% 4%;
+  padding: 0% 4% 1% 4%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -833,9 +844,6 @@ nav {
 /*Diseño responsive(Media Query mayor a 480px)*/
 @media screen and (min-width: 480px) {
   /*Style Home*/
-  .contacto__redes {
-    padding: 0 5%;
-    justify-content: space-between; }
   .seccion__numero i {
     font-size: 4rem; }
   .seccion__ilustracion img {
@@ -888,7 +896,7 @@ nav {
     text-align: center; }
     .seccion__articulo {
       padding: 15%; }
-    .seccion__titulo {
+    .seccion__titulo, .contacto__titulo {
       font-size: 2.22rem; }
     .seccion__subtitulo, .seccion__sede h3 {
       font-size: 1.4rem; }
@@ -976,7 +984,7 @@ nav {
     padding: 4%; }
     .seccion__articulo {
       padding: 17%; }
-    .seccion__titulo {
+    .seccion__titulo, .contacto__titulo {
       font-size: 2.4rem; }
     .seccion__subtitulo, .seccion__sede h3 {
       font-size: 1.5rem; }
