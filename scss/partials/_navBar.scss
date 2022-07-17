@@ -3,9 +3,8 @@ nav{
     height: 100px;
     background-image: linear-gradient($primaryBackgroundColor, $primaryBackgroundColor, $secondaryBackgroundColor, transparent);
     color: $tertiaryColor;
-    @include font($text, md);
     img{
-        width: 8rem;
+        width: 7rem;
     }
     span{
         display: block;
@@ -13,78 +12,81 @@ nav{
         border-radius: 15px;
     }
 }
-.navbar-toggler{
-    @include d-flex(row, center, center);
-}
-.dropdown{
-    border: 1px solid $tertiaryColor;
-    border-radius: 10px;
-    padding: 5px 10px;
-    &-menu{
-        background-color: rgba(17, 18, 18, 0.329);
-        width: auto;
-        li{
-            width: auto;
-        }
-        .dropdown-item{
-            background-color: rgba(17, 18, 18, 0);
-            color: $tertiaryColor;
-            width: auto;
-            @include font($text, md);
-        }
-    }
-}
 .navbar__boton{
-    width: 20px;
-    height: 25px;
+    width: 1.6rem;
+    height: 2rem;
+    margin-right: 7px;
+    cursor: pointer;
     @include d-flex(column, center, space-evenly);
+    > span{
+        background-color: $primaryColor;
+        height: 11%;
+    }
     .navbar__barra--1{
         margin-right: 40%;
         width: 60%;
-        height: 2px;
     }
     .navbar__barra--2{
         width: 100%;
-        height: 2px;
     }
     .navbar__barra--3{
         width: 60%;
         margin-left: 40%;
-        height: 2px;
     }
+}
+.navbar__close{
+    color: $primaryColor;
+    font-size: 2.3rem;
+    cursor: pointer;
 }
 .offcanvas, .offcanvas-body{
     background-color: $secondaryBackgroundColor;
 }
+.offcanvas-body{
+    @include d-flex(column, center, space-around);
+}
 .offcanvas-header{
+    padding: 7% 6%;
     background-color: $secondaryBackgroundColor;
-    button{
-        width: 15px;
-        height: 15px;
-    }
+    @include d-flex(row, center, space-between);
 }
 .container-fluid{
     padding: 0 5%;
 }
 .nav-item{
-    a, button{
-        color: $tertiaryColor;
-    }
     text-align: center;
-    margin: 15px 0 0 0;
-    a:hover{
-        animation-duration: 4s;
-        animation-name: menu__secciones;
+    a{
+        color: $tertiaryColor;
+        @include font(bold, lg);
+        &:hover{
+            color: $tertiaryColor;
+        }
     }
 }
-@keyframes menu__secciones{
-    0%{
-        color: $tertiaryColor;
+.navbar__legales{
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    > li{
+        margin: 5px 30px;
+        text-align: center;
+        a {
+            color: $tertiaryColor;
+            @include font(thin, xs);
+        }
     }
-    20% {
-        color: $primaryBackgroundColor;
-    }
-    30%, 100%{
+}
+.navbar__redes{
+    margin: 0;
+    padding: 0;
+    @include d-flex(row, center, center);
+    list-style: none;
+    margin-bottom: 20px;
+    a{
         color: $primaryColor;
+        margin: 0 7px;
+        i{
+            font-size: 1.7rem;
+        }
     }
 }

@@ -4,24 +4,20 @@
     align-items: $align;
     justify-content: $justify;
 }
+
 @mixin font($tipe, $size){
 
-    font-size: map-get($tipe, $size);
+    font-size: map-get($font, $size);
 
-    @if $tipe == $text or $tipe == $small {
-        font-weight: map-get($weight, text);
-        letter-spacing: map-get($spacing, text);
-        line-height: map-get($line, text);
-    }
-    @else if $tipe == $button{
-        font-weight: map-get($weight, title);
-        letter-spacing: map-get($spacing, text);
-        line-height: map-get($line, text);
+    @if $tipe == thin{
+        font-weight: map-get($weight, thin);
+        letter-spacing: map-get($spacing, thin);
+        line-height: map-get($line, thin);
     }
     @else{
-        font-weight: map-get($weight, title);
-        letter-spacing: map-get($spacing, title);
-        line-height: map-get($line, title);
+        font-weight: map-get($weight, bold);
+        letter-spacing: map-get($spacing, bold);
+        line-height: map-get($line, bold);
     }
           
 }

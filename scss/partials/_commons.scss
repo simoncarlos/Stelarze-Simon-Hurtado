@@ -7,7 +7,7 @@
     }
     &__titulo{
         margin: 20px 0 30px 0;
-        @include font($subtitle, sm);
+        @include font(bold, xlg);
         color: $tertiaryColor;
     }
     &--laboral, &--nosotros, &--garantia, &--ayuda, &--referido{
@@ -31,8 +31,8 @@
         }
     }
     &__item{
-        width: 15rem;
-        margin: 30px 2.5%;
+        max-width: 15rem;
+        margin: 2.5%;
         article {
             padding: 8%;
             border-radius: 26px;
@@ -41,32 +41,15 @@
         }
     }
     &__subtitulo{
-        @include font($subsubtitle, sm);
+        @include font(bold, lg);
         margin-bottom: 20px;
         color: $primaryColor;
     }
     &__boton{
-        @include font($button, sm);
-        color: $tertiaryColor;
-        text-decoration: none;
+        @extend .encabezado__boton;
         display: block;
         width: 13rem;
         margin: auto;
-        &:hover{
-            color: $secondaryColor;
-            transition: all 1s;
-        }
-        &::after{
-            content: "";
-            position: relative;
-            display: block;
-            height: 1px;
-            width: 30%;
-            top: 10px;
-            left: 35%;
-            border-radius: 10px;
-            background-color: $primaryColor;
-        }
     }
     &__datos textarea{
         height: 10rem;
@@ -79,11 +62,19 @@
     }
     &__area {
         background-color: $primaryBackgroundColor;
-        color: $primaryColor;
-        border-color: $primaryColor;
+        color: $fourthColor;
+        border-color: $secondaryColor;
         border-radius: 10px;
-        padding: 10px 18%;
+        width: 100%;
+        height: 14rem;
+        padding: 5%;
         margin: 20px 0;
+    }
+    &__area:focus{
+        outline: 1px solid $primaryColor;
+        &::placeholder{
+            color: $primaryBackgroundColor;
+        }
     }
     &__archivo {
         width: 75%;
@@ -109,7 +100,7 @@
     }
     /* ---------- Style Seccion Newsletter ----------*/
     &__texto {
-        @include font($text, sm);
+        @include font(thin, sm);
         color: $tertiaryColor;
     }
     &__texto--label {
@@ -117,9 +108,9 @@
         color: $primaryColor;
     }
     &__entrada {
-        width: 80%;
+        width: 90%;
         padding: 10px 25px;
-        border-radius: 7px;
+        border-radius: 25px;
         border: 1px solid $fourthColor;
         background-color: transparent;
         margin: 10px auto 20px auto;
@@ -130,21 +121,13 @@
         color: $primaryColor;
     }
     &__boton--input {
-        width: 8rem;
-        margin-bottom: 35px;
-        padding: 10px 0;
+        min-width: 10rem;
+        padding: 15px 30px;
+        margin: 10px 0;
         background-color: transparent;
-        border: 1px solid $secondaryColor;
-        border-radius: 15px;
-        border-top: 0px;
-        border-right: 0px;
+        border: 2px solid $secondaryColor;
+        border-radius: 25px;
         color: $tertiaryColor;
-        &:hover {
-            color: $secondaryColor;
-            border: 1px solid $fourthColor;
-            border-top: 0px;
-            border-right: 0px;
-        }
     }
 }
 #newsletter .seccion__entrada::placeholder {

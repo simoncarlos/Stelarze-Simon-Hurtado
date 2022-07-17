@@ -27,7 +27,7 @@
     img{
         max-height: 35vh;
         max-width: 80%;
-        opacity: 0.4;
+        opacity: 0.1;
         filter: blur(1px);
     }
 }
@@ -120,10 +120,10 @@
     grid-row-gap: 10px;
     margin-top: 50px;
     h3 {
-        @include font($text, sm);
+        @include font(bold, sm);
     }
     p {
-        @include font($small, sm);
+        @include font(thin, xs);
         color: $tertiaryColor;
     }
 }
@@ -205,7 +205,7 @@
     margin: 50px 0;
 }
 .seccion__fieldset {
-    border: 1px solid $primaryColor;
+    border: 1px solid $secondaryColor;
     border-radius: 10px;
     padding: 10px 0 50px 0;
     width: 100%;
@@ -216,18 +216,25 @@
         color: $primaryColor;
         top: -30px;
         left: 15%;
-        @include font($subsubtitle, sm);
+        @include font(bold, md);
         width: 70%;
     }
     input{
-        border-radius: 10px;
+        border-radius: 25px;
+        border-color: $secondaryColor;
         width: 80%;
         height: 2.3rem;
         text-align: center;
     }
+    input:focus{
+        outline: 1px solid $primaryColor;
+        &::placeholder{
+            color: $primaryBackgroundColor;
+        }
+    }
     label {
-        color: $primaryColor;
-        @include font($text, sm);
+        color: $tertiaryColor;
+        @include font(thin, sm);
         display: block;
         margin: 40px 0 10px 0;
     }
@@ -269,15 +276,15 @@
     }
     h3 {
         color: $primaryColor;
-        @include font($subsubtitle, sm);
+        @include font(bold, md);
     }
     p {
         color: $tertiaryColor;
-        @include font($text, sm);
+        @include font(thin, sm);
     }
     a {
         text-decoration: none;
-        @include font($small, sm);
+        @include font(thin, xs);
         color: $primaryBackgroundColor;
         padding: 5px 15px;
         border-radius: 10px;
@@ -330,9 +337,9 @@
 .seccion__lista--personal {
     width: 100%;
     padding: 5%;
-    white-space: nowrap;
-    overflow-x: auto;
-    @include d-flex(row, center, flex-start);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    @include d-flex(row, center, center);
     list-style: none;
 }
 .seccion__item--personal {
@@ -340,13 +347,9 @@
     text-align: center;
 }
 .seccion__personal {
-    margin-right: 50px;
     padding: 10px 0;
     width: 16rem;
     height: 22rem;
-    background-color: transparent;
-    border: 1px solid $secondaryColor;
-    border-radius: 10px;
 }
 .seccion__presentacion {
     width: 90%;
@@ -374,15 +377,15 @@
     margin-bottom: -8rem;
 }
 .seccion__cuerpo h3 {
-    margin-bottom: 20px;
+    margin-bottom: 7px;
 }
 .seccion__stack {
     @include d-flex(row, center, center);
-    margin: 30px auto;
-    img {
-        height: 20px;
+    margin: 10px auto;
+    i{
+        font-size: 30px;
         margin: 0 10px;
         opacity: 0.6;
-        filter: invert(53%) sepia(97%) saturate(1578%) hue-rotate(123deg) brightness(94%) contrast(99%);
+        color: $primaryColor;
     }
 }

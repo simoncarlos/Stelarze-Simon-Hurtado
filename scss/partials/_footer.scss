@@ -30,7 +30,7 @@
             text-decoration: none;
             color: $primaryColor;
             margin: 50px 0;
-            @include font($text, md);
+            @include font(thin, sm);
             i{
                 font-size: 1.7rem;
             }
@@ -44,7 +44,7 @@
     }
     &__subtitulo{
         margin-bottom: 10px;
-        @include font($subsubtitle, sm);
+        @include font(bold, md);
         color: $primaryColor;
     }
     &__direccion, &__telefono{
@@ -57,7 +57,7 @@
         text-decoration: none;
         color: $tertiaryColor;
         margin: 50px 0;
-        @include font($small, sm);
+        @include font(thin, sm);
     }
 }
 .legales{
@@ -81,12 +81,12 @@
         text-decoration: none;
         color: $primaryColor;
         width: auto;
-        @include font($small, sm);
+        @include font(thin, xs);
     }
     &__derechos{
         text-align: center;
         color: $primaryColor;
-        @include font($small, sm)
+        @include font(thin, xs)
     }
 }
   

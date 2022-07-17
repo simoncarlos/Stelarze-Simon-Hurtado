@@ -19,19 +19,17 @@
             <a href="../../index.html" class="navbarbrand menu__enlace">
                 <img src="../../assets/logos/logo-primary.webp" class="menu__logo" alt="Logo de Stelarze">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <div class="navbar__boton">
-                    <span class="navbar__barra--1"></span>
-                    <span class="navbar__barra--2"></span>
-                    <span class="navbar__barra--3"></span>
-                </div>
-            </button>
+            <div class="navbar__boton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar__barra--1"></span>
+                <span class="navbar__barra--2"></span>
+                <span class="navbar__barra--3"></span>
+            </div>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
                 <div class="offcanvas-header">
                     <a href="../../index.html" class="navbarbrand menu__enlace">
                         <img src="../../assets/logos/logo-primary.webp" class="menu__logo" alt="Logo de Stelarze">
                     </a>
-                    <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                    <i class='bx bx-x navbar__close' data-bs-dismiss="offcanvas"></i>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav align-items-center">
@@ -50,16 +48,48 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Español</a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="#">Ingles</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Portugues</a>
-                                </li>
-                            </ul>
+                    </ul>
+                    <ul class="navbar__legales align-items-center">
+                        <li>
+                            <a href="#" class="legales__enlaces">Aviso Legal</a>
+                        </li>
+                        <li>
+                            <a href="politica-de-privacidad.html" class="legales__enlaces">Politica de Privacidad</a>
+                        </li>
+                        <li>
+                            <a href="politica-de-cookies.html" class="legales__enlaces">Politica de Cookies</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar__redes align-items-center">
+                        <li>
+                            <a href="mailto:diegoestushoi@gmail.com?subject=Stelarze%20Soluciones%20Inteligentes&body=%C2%A1Hola!%C2%BFComo%20estas%3F%20Te%20quer%C3%ADa%20hacer%20una%20consulta%2C%20vengo%20desde%20el%20sitio%20web%20de%20Stelarze.%0D%0ASaludos%20Cordiales.">
+                                <i class='bx bxl-gmail'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <i class='bx bxl-instagram-alt'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=+5491173688676&text=%C2%A1Hola!%20%C2%BFC%C3%B3mo%20estas?%20Quiero%20consultar%20acerca%20de%20los%20servicios%20de%20Stelarze">
+                                <i class='bx bxl-whatsapp' ></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/diegosimonnn/Stelarze-Simon-Hurtado">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://web.telegram.org/k/">
+                                <i class='bx bxl-telegram'></i>
+                            </a>
                         </li>
                     </ul>
                 </div>

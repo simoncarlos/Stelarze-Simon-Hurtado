@@ -3,60 +3,36 @@
 $primaryFont: 'DM Sans', sans-serif;
 
 $spacing:(
-    title: -2.24px,
-    text: normal
+    bold: -2.24px,
+    thin: normal
 );
 
 $line:(
-    title: 40.42px,
-    text: 20px
+    bold: 40.42px,
+    thin: 20px
 );
 
 $weight: (
-    title: 700,
-    text: 400
+    bold: 700,
+    thin: 400
 );
 
-$title: (
-    xl: 3.8rem,
-    md: 3.2rem,
-    sm: 2.6rem
-);
-
-$subtitle: (
+$font: (
+    xs: 0.75rem,
+    sm: 0.90rem,
+    base: 1.05rem,
+    md: 1.25rem,
+    lg: 1.4rem,
+    xlg: 1.8rem,
     xl: 2.4rem,
-    md: 2.22rem,
-    sm: 2.05rem
-);
-
-$subsubtitle: (
-    xl: 1.5rem,
-    md: 1.4rem,
-    sm: 1.3rem
-);
-
-$text: (
-    xl: 1.14rem,
-    md: 0.9rem,
-    sm: 0.8rem
-);
-
-$small: (
-    xl: 0.8rem,
-    md: 0.72rem,
-    sm: 0.66rem
-);
-
-$button: (
-    xl: 1.19rem,
-    md: 1.07rem,
-    sm: 0.9rem
+    xxl: 3rem,
+    xxxl: 3.6rem
 );
 
 $primaryColor: rgba(1, 195, 142, 1);
 $secondaryColor: rgba(1, 195, 143, 0.612);
 $tertiaryColor: rgba(255, 255, 255, 1);
-$fourthColor: rgba(255, 255, 255, 0.612);
+$fourthColor: rgba(255, 255, 255, 0.83);
 
 $primaryBackgroundColor: rgba(17, 18, 18, 1);
 $secondaryBackgroundColor: rgba(17, 18, 18, 0.808);

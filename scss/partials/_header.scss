@@ -6,7 +6,7 @@
     span{
         color: $primaryColor;
     }
-    &--servicios, &--nosotros, &--empleo, &--contacto, &--legales{
+    &--servicios, &--nosotros, &--empleo, &--contacto, &--legales, &--home{
         width: 100%;
         height: 75vh;
         position: absolute;
@@ -16,6 +16,12 @@
         background-position-y: 50%;
         z-index: 0;
         opacity: 0.4;
+    }
+    &--home{
+        object-fit: cover;
+        object-position: 24% 5%;
+        transform: rotateY(3.142rad);
+        transform: rotateX(180);
     }
     &--nosotros{
         background-image: url('../assets/portadas/quienes-somos-header.webp');
@@ -34,7 +40,7 @@
     }      
     &__degradado{
         width: 100%;
-        height: 75vh;
+        height: 76vh;
         position: absolute;
         z-index: 1;
         background: linear-gradient($primaryBackgroundColor, $secondaryBackgroundColor, transparent, transparent, $secondaryBackgroundColor, $primaryBackgroundColor);
@@ -52,45 +58,31 @@
     }
     &__leyenda{
         color: $secondaryColor;
-        @include font($small, xl);
+        @include font(thin, xs);
+        span{
+            @include font(thin, xs);
+        }
     }
     &__titulo{
         color: $tertiaryColor;
-        @include font($title, sm);
+        @include font(bold, xl);
         margin-bottom: 30px;
     }
     &__texto{
         color: $tertiaryColor;
         width: 85%;
-        @include font($text, sm); 
+        @include font(thin, sm); 
         margin-bottom: 50px;
     }
     &__boton{
-        width: 130px;
-        @include font($button, sm);
+        width: 30%;
+        @include font(thin, base);
         color: $tertiaryColor;
         text-decoration: none;
-        &::after{
-            content: "";
-            position: relative;
-            display: block;
-            height: 1px;
-            width: 50px;
-            background-color: $primaryColor;
-        }
-        &:hover{
-            color: $primaryColor;
-        }
+        padding: 15px 30px;
+        border: 1px solid $tertiaryColor;
+        border-radius: 25px;
     }    
-}
-#particles-js{
-    width: 70vw;
-    height: 75vh;
-    position: absolute;
-    right: 0;
-    z-index: 0;
-    border-radius: 10px;
-    opacity: 0.5;
 }
 @keyframes desplazamiento{
     0%{

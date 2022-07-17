@@ -1,3 +1,3 @@
 # Stelarze-Simon-Hurtado
 
-Tercera Entrega del Proyecto Final
+Modificaciones de diseño/estructuracion en el nav, encabezados y componentes para entrega del proyecto final
