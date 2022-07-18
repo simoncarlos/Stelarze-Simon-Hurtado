@@ -156,16 +156,16 @@
                             <fieldset class="seccion__fieldset">
                                 <legend>Informacion del contacto</legend>
                                 <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" id="nombre" placeholder="Carlos Diego" class="seccion__entrada" autocomplete="off">
+                                <input type="text" name="nombre" id="nombre" placeholder="Carlos Diego" class="seccion__entrada" autocomplete="off" required>
                                 <label for="apellido">Apellido</label>
-                                <input type="text" name="apellido" id="apellido" placeholder="Simon Hurtado" class="seccion__entrada" autocomplete="off">
+                                <input type="text" name="apellido" id="apellido" placeholder="Simon Hurtado" class="seccion__entrada" autocomplete="off" required>
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email" placeholder="mail@algo.com" class="seccion__entrada" autocomplete="off">
+                                <input type="email" name="email" id="email" placeholder="mail@algo.com" class="seccion__entrada" autocomplete="off" required>
                             </fieldset>
                         </div>
                         <div class="col-lg-6 text-center">
                             <label for="razon" class="seccion__texto seccion__texto--superior d-block">Motivo</label>
-                            <textarea name="razon" rows="10" id="razon" class="seccion__area"></textarea>                       
+                            <textarea name="razon" rows="10" id="razon" class="seccion__area" required></textarea>                       
                         </div>
                     </div>
                 </div>

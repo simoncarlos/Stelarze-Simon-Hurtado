@@ -160,19 +160,19 @@
                             <fieldset class="seccion__fieldset">
                                 <legend>Informacion del postulante</legend>
                                 <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" id="nombre" placeholder="Carlos Diego" class="seccion__entrada" autocomplete="off">
+                                <input type="text" name="nombre" id="nombre" placeholder="Carlos Diego" class="seccion__entrada" autocomplete="off" required>
                                 <label for="apellido">Apellido</label>
-                                <input type="text" name="apellido" id="apellido" placeholder="Simon Hurtado" class="seccion__entrada" autocomplete="off">
+                                <input type="text" name="apellido" id="apellido" placeholder="Simon Hurtado" class="seccion__entrada" autocomplete="off" required>
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email" placeholder="mail@algo.com" class="seccion__entrada" autocomplete="off">
+                                <input type="email" name="email" id="email" placeholder="mail@algo.com" class="seccion__entrada" autocomplete="off" required>
                             </fieldset>
                         </div>
                         <div class="col-lg-6 text-center">
                             <label for="razon" class="seccion__texto seccion__texto--superior">Razon por la que te gustaria trabajar en la empresa</label>
-                            <textarea name="razon" id="razon" class="seccion__area"></textarea>
+                            <textarea name="razon" id="razon" class="seccion__area" required></textarea>
                             <label for="archivosubido" class="seccion__texto d-block">Cargar Curriculum</label>
                             <div class="input-group mb-3 seccion__archivo">
-                                <input type="file" class="form-control" id="inputGroupFile02">
+                                <input type="file" class="form-control" id="inputGroupFile02" required>
                             </div>                              
                         </div>
                     </div>

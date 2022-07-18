@@ -137,7 +137,7 @@
     .nav-item{
         margin: 0 0 0 10px;
         a{
-            @include font(thin, sm);
+            @include font(thin, base);
         }
     }
     .dropdown-menu .dropdown-item{
@@ -171,7 +171,7 @@
         article{
             width: 40%;
             h2, p{
-                text-align: right;
+                text-align: left;
             }
         }
     }

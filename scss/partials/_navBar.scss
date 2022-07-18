@@ -59,7 +59,8 @@ nav{
         color: $tertiaryColor;
         @include font(bold, lg);
         &:hover{
-            color: $tertiaryColor;
+            color: $primaryColor;
+            transition: all 1.4s ease;
         }
     }
 }

@@ -79,7 +79,8 @@ nav {
     letter-spacing: -2.24px;
     line-height: 40.42px; }
     .nav-item a:hover {
-      color: white; }
+      color: #01c38e;
+      transition: all 1.4s ease; }
 
 .navbar__legales {
   margin: 0;
@@ -112,7 +113,7 @@ nav {
 
 /* ---------- Style de los encabezados ---------- */
 .encabezado {
-  height: 95vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -198,6 +199,11 @@ nav {
     padding: 15px 30px;
     border: 1px solid white;
     border-radius: 25px; }
+    .encabezado__boton:hover, .seccion__boton:hover {
+      color: black;
+      background-color: #01c38e;
+      border-color: #01c38e;
+      transition: all 1s ease; }
 
 @keyframes desplazamiento {
   0% {
@@ -241,17 +247,16 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     margin: 50px auto; }
-    .seccion__lista article:hover {
-      transform: scale(1.15);
-      transition: all 2s; }
   .seccion__item {
     max-width: 15rem;
     margin: 2.5%; }
     .seccion__item article {
       padding: 8%;
       border-radius: 26px;
-      background: #111212;
-      box-shadow: 19px 19px 40px #0c0d0d, -19px -19px 40px #161717; }
+      background: #111212; }
+      .seccion__item article:hover {
+        box-shadow: 19px 19px 40px #0c0d0d, -19px -19px 40px #161717;
+        transition: all 2s ease; }
   .seccion__subtitulo {
     font-size: 1.4rem;
     font-weight: 700;
@@ -318,11 +323,15 @@ nav {
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.83);
     background-color: transparent;
-    margin: 10px auto 20px auto;
+    margin: 25px auto 0 auto;
     display: block;
-    color: white; }
-  .seccion__entrada:focus {
-    color: #01c38e; }
+    color: white;
+    text-align: center; }
+    .seccion__entrada:focus {
+      color: #01c38e;
+      outline: 1px solid #01c38e; }
+      .seccion__entrada:focus::placeholder {
+        color: #111212; }
   .seccion__boton--input {
     min-width: 10rem;
     padding: 15px 30px;
@@ -331,9 +340,11 @@ nav {
     border: 2px solid rgba(1, 195, 143, 0.612);
     border-radius: 25px;
     color: white; }
-
-#newsletter .seccion__entrada::placeholder {
-  color: rgba(1, 195, 143, 0.612); }
+    .seccion__boton--input:hover {
+      color: black;
+      background-color: #01c38e;
+      border-color: #01c38e;
+      transition: all 1s ease; }
 
 /* ----------- Style Pagina Principal(home) ---------- */
 .seccion__procesos {
@@ -455,17 +466,6 @@ nav {
   grid-template-rows: repeat(9, 9rem);
   grid-row-gap: 10px;
   margin-top: 50px; }
-  .seccion__galeria h3 {
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: -2.24px;
-    line-height: 40.42px; }
-  .seccion__galeria p {
-    font-size: 0.75rem;
-    font-weight: 400;
-    letter-spacing: normal;
-    line-height: 20px;
-    color: white; }
 
 .seccion__fotografia {
   background-repeat: no-repeat;
@@ -477,14 +477,30 @@ nav {
     height: 100%;
     padding-left: 5%;
     border-radius: 7px;
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.178);
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: flex-end; }
+    .seccion__fotografia article h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: -2.24px;
+      line-height: 40.42px; }
+    .seccion__fotografia article p {
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: normal;
+      line-height: 20px;
+      color: white; }
+    .seccion__fotografia article > * {
+      display: none; }
     .seccion__fotografia article:hover {
-      background-color: rgba(0, 0, 0, 0.575); }
+      background-color: rgba(0, 0, 0, 0.733);
+      transition: all 1.5s ease; }
+      .seccion__fotografia article:hover > * {
+        display: block; }
   .seccion__fotografia--primero {
     grid-area: primero;
     background-image: url("../assets/galeria/oficina--caba--1.webp"); }
@@ -553,16 +569,6 @@ nav {
     letter-spacing: -2.24px;
     line-height: 40.42px;
     width: 70%; }
-  .seccion__fieldset input {
-    border-radius: 25px;
-    border-color: rgba(1, 195, 143, 0.612);
-    width: 80%;
-    height: 2.3rem;
-    text-align: center; }
-  .seccion__fieldset input:focus {
-    outline: 1px solid #01c38e; }
-    .seccion__fieldset input:focus::placeholder {
-      color: #111212; }
   .seccion__fieldset label {
     color: white;
     font-size: 0.9rem;
@@ -570,7 +576,19 @@ nav {
     letter-spacing: normal;
     line-height: 20px;
     display: block;
+    width: auto;
     margin: 40px 0 10px 0; }
+  .seccion__fieldset input {
+    border-radius: 25px;
+    border-color: rgba(1, 195, 143, 0.612);
+    width: 80%;
+    padding: 20px;
+    height: 2.3rem;
+    text-align: center; }
+    .seccion__fieldset input:focus {
+      outline: 1px solid #01c38e; }
+      .seccion__fieldset input:focus::placeholder {
+        color: #111212; }
 
 /* ---------- Style Contacto ---------- */
 .seccion__texto--margen {
@@ -630,9 +648,14 @@ nav {
     letter-spacing: normal;
     line-height: 20px;
     color: #111212;
-    padding: 5px 15px;
+    padding: 4px 14px;
     border-radius: 10px;
-    background-color: #01c38e; }
+    background-color: #01c38e;
+    border: 1px solid #01c38e; }
+    .seccion__sede a:hover {
+      background-color: transparent;
+      color: #01c38e;
+      transition: all 1.4s ease; }
 
 /* ---------- Style quienes-somos(nuestra esencia) ----------*/
 /* ---------- Style Linea de Tiempo ---------- */
@@ -769,6 +792,9 @@ nav {
       line-height: 20px; }
       .contacto__item a i {
         font-size: 1.7rem; }
+      .contacto__item a:hover {
+        color: white;
+        transition: all 1s ease; }
   .contacto__provincias {
     margin-top: 40px; }
     .contacto__provincias .col-2 {
@@ -792,6 +818,9 @@ nav {
     font-weight: 400;
     letter-spacing: normal;
     line-height: 20px; }
+    .contacto__enlaces:hover {
+      color: #01c38e;
+      transition: all 1s ease; }
 
 .legales {
   padding: 0% 4% 1% 4%;
@@ -819,6 +848,9 @@ nav {
     font-weight: 400;
     letter-spacing: normal;
     line-height: 20px; }
+    .legales__enlaces:hover {
+      color: white;
+      transition: all 1s ease; }
   .legales__derechos {
     text-align: center;
     color: #01c38e;
@@ -931,7 +963,7 @@ nav {
   .nav-item {
     margin: 0 0 0 10px; }
     .nav-item a {
-      font-size: 0.9rem;
+      font-size: 1.05rem;
       font-weight: 400;
       letter-spacing: normal;
       line-height: 20px; }
@@ -962,7 +994,7 @@ nav {
     .seccion__portfolio article {
       width: 40%; }
       .seccion__portfolio article h2, .seccion__portfolio article p {
-        text-align: right; }
+        text-align: left; }
   .seccion__ilustracion {
     position: static;
     z-index: 0; }

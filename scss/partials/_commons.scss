@@ -25,10 +25,6 @@
         @include d-flex(row, center, center);
         flex-wrap: wrap;
         margin: 50px auto;
-        article:hover {
-            transform: scale(1.15);
-            transition: all 2s;
-        }
     }
     &__item{
         max-width: 15rem;
@@ -37,7 +33,10 @@
             padding: 8%;
             border-radius: 26px;
             background: $primaryBackgroundColor;
-            box-shadow: 19px 19px 40px #0c0d0d, -19px -19px 40px #161717;
+            &:hover {
+                box-shadow: 19px 19px 40px #0c0d0d, -19px -19px 40px #161717;
+                transition: all 2s ease;
+            }
         }
     }
     &__subtitulo{
@@ -113,12 +112,17 @@
         border-radius: 25px;
         border: 1px solid $fourthColor;
         background-color: transparent;
-        margin: 10px auto 20px auto;
+        margin: 25px auto 0 auto;
         display: block;
         color: $tertiaryColor;
-    }
-    &__entrada:focus {
-        color: $primaryColor;
+        text-align: center;
+        &:focus{
+            color: $primaryColor;
+            outline: 1px solid $primaryColor;
+            &::placeholder{
+                color: $primaryBackgroundColor;
+            }
+        }
     }
     &__boton--input {
         min-width: 10rem;
@@ -128,8 +132,11 @@
         border: 2px solid $secondaryColor;
         border-radius: 25px;
         color: $tertiaryColor;
+        &:hover{
+            color: black;
+            background-color: $primaryColor;
+            border-color: $primaryColor;
+            transition: all 1s ease;
+        }
     }
-}
-#newsletter .seccion__entrada::placeholder {
-    color: $secondaryColor;
 }
