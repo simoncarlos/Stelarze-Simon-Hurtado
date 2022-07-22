@@ -1,74 +1,74 @@
 /* ---------- Style del Menu ---------- */
-nav{
+nav {
     height: 100px;
     background-image: linear-gradient($primaryBackgroundColor, $primaryBackgroundColor, $secondaryBackgroundColor, transparent);
     color: $tertiaryColor;
-    img{
+    img {
         width: 7rem;
     }
-    span{
+    span {
         display: block;
         background-color: $tertiaryColor;
         border-radius: 15px;
     }
 }
-.navbar__boton{
+.navbar__boton {
     width: 1.6rem;
     height: 2rem;
     margin-right: 7px;
     cursor: pointer;
     @include d-flex(column, center, space-evenly);
-    > span{
+    > span {
         background-color: $primaryColor;
         height: 11%;
     }
-    .navbar__barra--1{
+    .navbar__barra--1 {
         margin-right: 40%;
         width: 60%;
     }
-    .navbar__barra--2{
+    .navbar__barra--2 {
         width: 100%;
     }
-    .navbar__barra--3{
+    .navbar__barra--3 {
         width: 60%;
         margin-left: 40%;
     }
 }
-.navbar__close{
+.navbar__close {
     color: $primaryColor;
     font-size: 2.3rem;
     cursor: pointer;
 }
-.offcanvas, .offcanvas-body{
+.offcanvas, .offcanvas-body {
     background-color: $secondaryBackgroundColor;
 }
-.offcanvas-body{
+.offcanvas-body {
     @include d-flex(column, center, space-around);
 }
-.offcanvas-header{
+.offcanvas-header {
     padding: 7% 6%;
     background-color: $secondaryBackgroundColor;
     @include d-flex(row, center, space-between);
 }
-.container-fluid{
+.container-fluid {
     padding: 0 5%;
 }
-.nav-item{
+.nav-item {
     text-align: center;
-    a{
+    a {
         color: $tertiaryColor;
         @include font(bold, lg);
-        &:hover{
+        &:hover {
             color: $primaryColor;
             transition: all 1.4s ease;
         }
     }
 }
-.navbar__legales{
+.navbar__legales {
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-    > li{
+    li {
         margin: 5px 30px;
         text-align: center;
         a {
@@ -77,16 +77,16 @@ nav{
         }
     }
 }
-.navbar__redes{
+.navbar__redes {
     margin: 0;
     padding: 0;
     @include d-flex(row, center, center);
     list-style: none;
     margin-bottom: 20px;
-    a{
+    a {
         color: $primaryColor;
         margin: 0 7px;
-        i{
+        i {
             font-size: 1.7rem;
         }
     }

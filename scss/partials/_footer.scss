@@ -1,32 +1,32 @@
 /* ---------- Style Footer ---------- */
-.contacto{
+.contacto {
     padding: 0 5%;
     height: auto;
     text-align: center;
-    &__titulo{
+    &__titulo {
         @extend .seccion__titulo;
     }
-    &__secciones{
+    &__secciones {
         margin: 5vw 0;
         width: 100%;
     }
-    img{
+    img {
         width: 10rem;
     }
-    &__lista{
+    &__lista {
         @include d-flex(row, center, center);
         flex-wrap: wrap;
         width: auto;
         padding: 0;
         margin: 15px 0;
     }
-    &__item{
+    &__item {
         margin: 10px;
         width: auto;
         height: auto;
         list-style: none;
         text-align: center;
-        a{
+        a {
             text-decoration: none;
             color: $primaryColor;
             margin: 50px 0;
@@ -34,68 +34,68 @@
             i{
                 font-size: 1.7rem;
             }
-            &:hover{
+            &:hover {
                 color: $tertiaryColor;
                 transition: all 1s ease;
             }
         }
     }
-    &__provincias{
+    &__provincias {
         margin-top: 40px;
-        .col-2{
+        .col-2 {
             margin: 10px 0;
         }
     }
-    &__subtitulo{
+    &__subtitulo {
         margin-bottom: 10px;
         @include font(bold, md);
         color: $primaryColor;
     }
-    &__direccion, &__telefono{
+    &__direccion, &__telefono {
         margin: 10px 0;
     }
-    i{
+    i {
         color: $primaryColor;
     }
-    &__enlaces{
+    &__enlaces {
         text-decoration: none;
         color: $tertiaryColor;
         margin: 50px 0;
         @include font(thin, sm);
-        &:hover{
+        &:hover {
             color: $primaryColor;
             transition: all 1s ease;
         }
     }
 }
-.legales{
+.legales {
     padding: 0% 4% 1% 4%;
     width: 100%;
     @include d-flex(row, center, space-evenly);
     flex-wrap: wrap;
-    &__lista{
+    &__lista {
         width: 40rem;
         display: block;
         padding: 0;
     }
-    &__item{
+    &__item {
         width: 10rem;
         margin: 0 auto;
         justify-content: space-between;
         text-align: center;
         list-style: none;
     }
-    &__enlaces{
+    &__enlaces {
         text-decoration: none;
         color: $primaryColor;
         width: auto;
         @include font(thin, xs);
-        &:hover{
+        &:hover {
             color: $tertiaryColor;
             transition: all 1s ease;
         }
     }
-    &__derechos{
+    &__derechos {
         text-align: center;
         color: $primaryColor;
         @include font(thin, xs)

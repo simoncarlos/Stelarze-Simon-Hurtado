@@ -12,6 +12,14 @@ body {
 ul li {
   list-style: none; }
 
+/*   
+    @include d-flex(row, center, center);   
+    Mixin de display flex
+*/
+/*   
+    @include font(thin, sm);   
+    Mixin de tipografia
+*/
 /* ---------- Style del Menu ---------- */
 nav {
   height: 100px;
@@ -86,10 +94,10 @@ nav {
   margin: 0;
   padding: 0;
   flex-wrap: wrap; }
-  .navbar__legales > li {
+  .navbar__legales li {
     margin: 5px 30px;
     text-align: center; }
-    .navbar__legales > li a {
+    .navbar__legales li a {
       color: white;
       font-size: 0.75rem;
       font-weight: 400;
@@ -204,6 +212,16 @@ nav {
       background-color: #01c38e;
       border-color: #01c38e;
       transition: all 1s ease; }
+  .encabezado--error {
+    margin-top: 70px;
+    height: 90vh; }
+    .encabezado--error img {
+      width: 90%;
+      margin: 0 auto; }
+    .encabezado--error article {
+      text-align: center; }
+      .encabezado--error article > * {
+        margin: 1rem auto; }
 
 @keyframes desplazamiento {
   0% {
@@ -241,14 +259,9 @@ nav {
     z-index: -1;
     opacity: 0.15; }
   .seccion__lista {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     margin: 50px auto; }
   .seccion__item {
-    max-width: 15rem;
+    max-width: 16rem;
     margin: 2.5%; }
     .seccion__item article {
       padding: 8%;
@@ -358,14 +371,14 @@ nav {
   align-items: center;
   justify-content: center; }
 
-.seccion__numero {
+.seccion__orden {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center; }
-  .seccion__numero i {
-    font-size: 3rem;
-    color: #01c38e; }
+  .seccion__orden img {
+    height: 3rem;
+    filter: invert(66%) sepia(90%) saturate(4775%) hue-rotate(133deg) brightness(104%) contrast(99%); }
 
 .seccion__descripcion {
   width: 100%;
@@ -377,7 +390,7 @@ nav {
   position: absolute;
   z-index: -1; }
   .seccion__ilustracion img {
-    max-height: 35vh;
+    max-height: 30vh;
     max-width: 80%;
     opacity: 0.1;
     filter: blur(1px); }
@@ -391,7 +404,7 @@ nav {
       text-align: right; }
 
 .seccion__portfolio {
-  margin: -50px 0 30px 0; }
+  margin: 0 0 30px 0; }
   .seccion__portfolio .seccion__mockup {
     display: block;
     width: 100%; }
@@ -415,7 +428,7 @@ nav {
 
 .seccion__degradado {
   width: 100%;
-  height: 75vh;
+  height: 78vh;
   position: absolute;
   z-index: 0;
   background: linear-gradient(#111212, rgba(17, 18, 18, 0.808), transparent, transparent, rgba(17, 18, 18, 0.808), #111212);
@@ -431,28 +444,16 @@ nav {
     text-align: right; }
 
 .seccion__clientes--wrap {
-  width: 100%;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; }
-  .seccion__clientes--wrap div {
-    width: auto;
-    text-align: center;
-    margin: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; }
-  .seccion__clientes--wrap img {
-    width: 6rem;
-    opacity: 0.5; }
-    .seccion__clientes--wrap img:hover {
-      opacity: 1;
-      transform: scale(1.1);
-      transition: all 1s; }
+  margin-top: 5rem; }
+  .seccion__clientes--wrap .col-auto {
+    margin: 1rem 0.5rem; }
+    .seccion__clientes--wrap .col-auto img {
+      width: 6rem;
+      opacity: 0.5; }
+      .seccion__clientes--wrap .col-auto img:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        transition: all 1s; }
 
 .seccion__item--ancho {
   width: 19%; }
@@ -477,19 +478,19 @@ nav {
     height: 100%;
     padding-left: 5%;
     border-radius: 7px;
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(0, 0, 0, 0.6);
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: flex-end; }
     .seccion__fotografia article h3 {
-      font-size: 0.9rem;
+      font-size: 1.05rem;
       font-weight: 700;
       letter-spacing: -2.24px;
       line-height: 40.42px; }
     .seccion__fotografia article p {
-      font-size: 0.75rem;
+      font-size: 0.9rem;
       font-weight: 400;
       letter-spacing: normal;
       line-height: 20px;
@@ -497,7 +498,7 @@ nav {
     .seccion__fotografia article > * {
       display: none; }
     .seccion__fotografia article:hover {
-      background-color: rgba(0, 0, 0, 0.733);
+      background-color: rgba(0, 0, 0, 0.9);
       transition: all 1.5s ease; }
       .seccion__fotografia article:hover > * {
         display: block; }
@@ -697,20 +698,8 @@ nav {
     background-color: #01c38e; }
 
 /* ---------- Fin Style Linea de Tiempo ---------- */
-.seccion__lista--personal {
-  width: 100%;
-  padding: 5%;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  list-style: none; }
-
-.seccion__item--personal {
-  width: auto;
-  text-align: center; }
+.seccion__empleados {
+  margin-top: 3rem; }
 
 .seccion__personal {
   padding: 10px 0;
@@ -862,8 +851,10 @@ nav {
 /*Diseño responsive(Media Query mayor a 480px)*/
 @media screen and (min-width: 480px) {
   /*Style Home*/
-  .seccion__numero i {
-    font-size: 4rem; }
+  .encabezado--error img {
+    width: 80%; }
+  .seccion__orden img {
+    height: 4rem; }
   .seccion__ilustracion img {
     filter: blur(2px);
     opacity: 0.2; } }
@@ -886,8 +877,8 @@ nav {
       grid-template-rows: repeat(3, 8rem);
       grid-row-gap: 10px;
       grid-column-gap: 10px; }
-    .seccion__numero i {
-      font-size: 4.5rem; }
+    .seccion__orden img {
+      height: 5rem; }
     .seccion__descripcion {
       width: 80%; }
   .legales__lista {
@@ -909,6 +900,10 @@ nav {
     font-size: 1.05rem; }
   .encabezado__boton, .seccion__boton {
     font-size: 1.25rem; }
+  .encabezado--error {
+    height: 100vh; }
+    .encabezado--error img {
+      width: 55%; }
   .seccion {
     padding: 5%;
     text-align: center; }
@@ -928,8 +923,8 @@ nav {
       font-size: 0.9rem; }
     .seccion__descripcion {
       width: 70%; }
-    .seccion__numero i {
-      font-size: 5rem; }
+    .seccion__orden img {
+      font-size: 6rem; }
     .seccion__entrada {
       width: 60%; }
     .seccion__fieldset label {
@@ -940,6 +935,8 @@ nav {
         font-size: 1.05rem; }
       .seccion__galeria p {
         font-size: 0.9rem; }
+    .seccion__legales {
+      width: 75%; }
   .contacto__subtitulo {
     font-size: 1.4rem; }
   .contacto__enlaces {
@@ -971,6 +968,8 @@ nav {
     text-align: left; }
   .navbar__redes, .navbar__legales {
     display: none; }
+  .encabezado--error img {
+    width: 40%; }
   .seccion__clientes--wrap {
     width: 80%;
     margin: 40px auto 0; }
@@ -1003,8 +1002,6 @@ nav {
       max-width: 80%;
       opacity: 0.3;
       filter: blur(3px); }
-  .seccion__numero i {
-    font-size: 5rem; }
   .seccion__ilustracion img {
     filter: blur(0px);
     opacity: 1; } }

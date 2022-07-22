@@ -1,33 +1,31 @@
 /* ---------- Style Secciones ---------- */
-.seccion{
+.seccion {
     padding: 7%;
     text-align: center;
     &--padding {
         padding-bottom: 0;
     }
-    &__titulo{
+    &__titulo {
         margin: 20px 0 30px 0;
         @include font(bold, xlg);
         color: $tertiaryColor;
     }
-    &--laboral, &--nosotros, &--garantia, &--ayuda, &--referido{
+    &--laboral, &--nosotros, &--garantia, &--ayuda, &--referido {
         margin: 60px 0;
         height: 75vh;
         @include d-flex(row, center, center);
     }
-    &__laboral--fondo, &__nosotros--fondo, &__garantia--fondo, &__ayuda--fondo, &__referido--fondo{
+    &__laboral--fondo, &__nosotros--fondo, &__garantia--fondo, &__ayuda--fondo, &__referido--fondo {
         @extend .encabezado--servicios;
         background-position-y: 70%;
         z-index: -1;
         opacity: 0.15;
     }
-    &__lista{
-        @include d-flex(row, center, center);
-        flex-wrap: wrap;
+    &__lista {
         margin: 50px auto;
     }
-    &__item{
-        max-width: 15rem;
+    &__item {
+        max-width: 16rem;
         margin: 2.5%;
         article {
             padding: 8%;
@@ -39,18 +37,18 @@
             }
         }
     }
-    &__subtitulo{
+    &__subtitulo {
         @include font(bold, lg);
         margin-bottom: 20px;
         color: $primaryColor;
     }
-    &__boton{
+    &__boton {
         @extend .encabezado__boton;
         display: block;
         width: 13rem;
         margin: auto;
     }
-    &__datos textarea{
+    &__datos textarea {
         height: 10rem;
     }
     &__confirmar {
@@ -69,9 +67,9 @@
         padding: 5%;
         margin: 20px 0;
     }
-    &__area:focus{
+    &__area:focus {
         outline: 1px solid $primaryColor;
-        &::placeholder{
+        &::placeholder {
             color: $primaryBackgroundColor;
         }
     }
@@ -116,10 +114,10 @@
         display: block;
         color: $tertiaryColor;
         text-align: center;
-        &:focus{
+        &:focus {
             color: $primaryColor;
             outline: 1px solid $primaryColor;
-            &::placeholder{
+            &::placeholder {
                 color: $primaryBackgroundColor;
             }
         }
@@ -132,7 +130,7 @@
         border: 2px solid $secondaryColor;
         border-radius: 25px;
         color: $tertiaryColor;
-        &:hover{
+        &:hover {
             color: black;
             background-color: $primaryColor;
             border-color: $primaryColor;

@@ -1,10 +1,17 @@
+/*   
+    @include d-flex(row, center, center);   
+    Mixin de display flex
+*/
 @mixin d-flex($f-direction ,$align, $justify){
     display: flex;
     flex-direction: $f-direction;
     align-items: $align;
     justify-content: $justify;
 }
-
+/*   
+    @include font(thin, sm);   
+    Mixin de tipografia
+*/
 @mixin font($tipe, $size){
 
     font-size: map-get($font, $size);

@@ -1,12 +1,12 @@
 /* ---------- Style de los encabezados ---------- */
-.encabezado{
+.encabezado {
     height: 90vh;
     @include d-flex(row, center, flex-start);
     margin-top: 50px;
-    span{
+    span {
         color: $primaryColor;
     }
-    &--servicios, &--nosotros, &--empleo, &--contacto, &--legales, &--home{
+    &--servicios, &--nosotros, &--empleo, &--contacto, &--legales, &--home {
         width: 100%;
         height: 75vh;
         position: absolute;
@@ -17,28 +17,28 @@
         z-index: 0;
         opacity: 0.4;
     }
-    &--home{
+    &--home {
         object-fit: cover;
         object-position: 24% 5%;
         transform: rotateY(3.142rad);
         transform: rotateX(180);
     }
-    &--nosotros{
+    &--nosotros {
         background-image: url('../assets/portadas/quienes-somos-header.webp');
     }
-    &--servicios{
+    &--servicios {
         background-image: url('../assets/portadas/servicios-header.webp');
     }
-    &--empleo{
+    &--empleo {
         background-image: url('../assets/portadas/equipo.webp');
     }
-    &--contacto{
+    &--contacto {
         background-image: url('../assets/portadas/sedes-header.webp');
     }
-    &--legales{
+    &--legales {
         background-image: url('../assets/portadas/legales.webp');
     }      
-    &__degradado{
+    &__degradado {
         width: 100%;
         height: 76vh;
         position: absolute;
@@ -46,7 +46,7 @@
         background: linear-gradient($primaryBackgroundColor, $secondaryBackgroundColor, transparent, transparent, $secondaryBackgroundColor, $primaryBackgroundColor);
         opacity: 1;
     }
-    &__articulo{
+    &__articulo {
         text-align: left;
         width: 95%;
         position: absolute;
@@ -56,25 +56,25 @@
         animation-name: desplazamiento;
         animation-iteration-count: 1;
     }
-    &__leyenda{
+    &__leyenda {
         color: $secondaryColor;
         @include font(thin, xs);
-        span{
+        span {
             @include font(thin, xs);
         }
     }
-    &__titulo{
+    &__titulo {
         color: $tertiaryColor;
         @include font(bold, xl);
         margin-bottom: 30px;
     }
-    &__texto{
+    &__texto {
         color: $tertiaryColor;
         width: 85%;
         @include font(thin, sm); 
         margin-bottom: 50px;
     }
-    &__boton{
+    &__boton {
         width: 30%;
         @include font(thin, base);
         color: $tertiaryColor;
@@ -82,25 +82,39 @@
         padding: 15px 30px;
         border: 1px solid $tertiaryColor;
         border-radius: 25px;
-        &:hover{
+        &:hover {
             color: black;
             background-color: $primaryColor;
             border-color: $primaryColor;
             transition: all 1s ease;
         }
+    }
+    &--error{
+        margin-top: 70px;
+        height: 90vh;
+        img{
+            width: 90%;
+            margin: 0 auto;
+        }
+        article{
+            text-align: center;
+            > * {
+                margin: 1rem auto;
+            }
+        }
     }    
 }
-@keyframes desplazamiento{
-    0%{
+@keyframes desplazamiento {
+    0% {
         left: -100vw;
     }
-    10%{
+    10% {
         left: -60vw;
     }
-    15%{
+    15% {
         left: -30vw;
     }
-    100%{
+    100% {
         left: 0;
     }
 }

@@ -1,45 +1,48 @@
 /*Diseño responsive(Media Query mayor a 480px)*/
 @media screen and (min-width: 480px){
     /*Style Home*/
-    .seccion__numero i{
-        font-size: 4rem;
+    .encabezado--error img{
+        width: 80%;
     }
-    .seccion__ilustracion img{
+    .seccion__orden img {
+        height: 4rem;
+    }
+    .seccion__ilustracion img {
         filter: blur(2px);
         opacity: 0.2;
     }
 }
 /*Diseño responsive(Media Query mayor a 600px)*/
 @media screen and (min-width: 600px){
-    .seccion{
+    .seccion {
         padding: 6%;
-        &__articulo{
+        &__articulo {
             padding: 10%;
         }
-        &__portfolio{
+        &__portfolio {
             margin: -100px 0 50px 0;
-            .seccion__mockup img{
+            .seccion__mockup img {
                 width: 75%;
             }
-            article{
+            article {
                 padding: 0 4%;
             }
         }
-        &__galeria{
+        &__galeria {
             grid-template-areas: "primero segundo segundo tercero" "cuarto  cuarto  quinto  sexto" "septimo octavo  noveno  noveno";
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 8rem);
             grid-row-gap: 10px;
             grid-column-gap: 10px;
         }
-        &__numero i{
-            font-size: 4.5rem;
+        &__orden img {
+            height: 5rem;
         }
-        &__descripcion{
+        &__descripcion {
             width: 80%;
         }
     }
-    .legales__lista{
+    .legales__lista {
         width: 40rem;
         @include d-flex(row, center, space-around);
         flex-wrap: wrap;
@@ -47,175 +50,184 @@
 }
 /*Diseño responsive(Media Query mayor a 768px)*/
 @media screen and (min-width: 768px){
-    .encabezado__articulo{
+    .encabezado__articulo {
         width: 80%;
     }
-    .encabezado__titulo{
+    .encabezado__titulo {
         font-size: map-get($font, xxl);
         line-height: 52px;
     }
-    .encabezado__texto{
+    .encabezado__texto {
         font-size: map-get($font, base);
     }
-    .encabezado__boton{
+    .encabezado__boton {
         font-size: map-get($font, md);
     }
-    .seccion{
+    .encabezado--error{
+        height: 100vh;
+        img{
+            width: 55%;
+        }
+    }
+    .seccion {
         padding: 5%;
         text-align: center;
-        &__articulo{
+        &__articulo {
             padding: 15%;
         }
-        &__titulo{
+        &__titulo {
             font-size: map-get($font, xl);
         }
-        &__subtitulo{
+        &__subtitulo {
             font-size: map-get($font, lg);
         }
-        &__sede h3{
+        &__sede h3 {
             font-size: map-get($font, lg);
         }
-        &__sede p{
+        &__sede p {
             font-size: map-get($font, sm);
         }
-        &__sede a{
+        &__sede a {
             font-size: map-get($font, xs);
         }
-        &__texto{
+        &__texto {
             font-size: map-get($font, sm);
         }
-        &__descripcion{
+        &__descripcion {
             width: 70%;
         }
-        &__numero i{
-            font-size: 5rem;
+        &__orden img {
+            font-size: 6rem;
         }
-        &__entrada{
+        &__entrada {
             width: 60%;
         }
-        &__fieldset label{
+        &__fieldset label {
             font-size: map-get($font, base);
         }
-        &__galeria{
+        &__galeria {
             grid-template-rows: repeat(3, 8rem);
-            h3{
+            h3 {
                 font-size: map-get($font, base);
             }
-            p{
+            p {
                 font-size: map-get($font, sm);
             }
         }
+        &__legales {
+            width: 75%;
+        }
     }
-    .contacto{
-        &__subtitulo{
+    .contacto {
+        &__subtitulo {
             font-size: map-get($font, lg);
         }
-        &__enlaces{
+        &__enlaces {
             font-size: map-get($font, sm);
         }
     }
-    .legales{
-        &__enlaces, &__derechos{
+    .legales {
+        &__enlaces, &__derechos {
             font-size: map-get($font, sm);
         }
     }
 }
 @media screen and (min-width: 992px){
-    .offcanvas, .offcanvas-body, .offcanvas-header{
+    .offcanvas, .offcanvas-body, .offcanvas-header {
         background-color: rgba(0, 0, 0, 0);
     }
-    .navbar__boton{
+    .navbar__boton {
         display: none;
     }
-    .navbar-nav{
+    .navbar-nav {
         justify-content: end;
         flex-grow: 1;
     }
-    .offcanvas-body{
+    .offcanvas-body {
         @include d-flex(row, center, space-between);
     }
-    .nav-item{
+    .nav-item {
         margin: 0 0 0 10px;
-        a{
+        a {
             @include font(thin, base);
         }
     }
-    .dropdown-menu .dropdown-item{
+    .dropdown-menu .dropdown-item {
         text-align: left;
     }
-    .navbar__redes, .navbar__legales{
+    .navbar__redes, .navbar__legales {
         display: none;
     }
-    .seccion__clientes--wrap{
+    .encabezado--error img{
+        width: 40%;
+    }
+    .seccion__clientes--wrap {
         width: 80%;
         margin: 40px auto 0;
     }
-    .seccion__etapa{
+    .seccion__etapa {
         margin: 10% auto;
         width: 80%;
     }
-    .seccion__area{
+    .seccion__area {
         width: 80%;
         height: 19rem;
     }
-    .seccion__portfolio{
+    .seccion__portfolio {
         margin: -80px 0 0 0;
         @include d-flex(row, center, center);
-        .seccion__mockup{
+        .seccion__mockup {
             display: inline;
             width: 40%;
-            img{
+            img {
                 width: 100%;
             }
         }
-        article{
+        article {
             width: 40%;
-            h2, p{
+            h2, p {
                 text-align: left;
             }
         }
     }
-    .seccion__ilustracion{
+    .seccion__ilustracion {
         position: static;
         z-index: 0;
-        img{
+        img {
             max-height: 50vh;
             max-width: 80%;
             opacity: 0.3;
             filter: blur(3px);
         }
     }
-    .seccion__numero i{
-        font-size: 5rem;
-    }
-    .seccion__ilustracion img{
+    .seccion__ilustracion img {
         filter: blur(0px);
         opacity: 1;
     }
 }
 /*Diseño responsive(Media Query mayor a 1024px)*/
 @media screen and (min-width: 1024px){
-    .encabezado__articulo{
+    .encabezado__articulo {
         width: 62%;
         padding-left: 7%;
     }
-    .encabezado__titulo{
+    .encabezado__titulo {
         font-size: map-get($font, xxxl);
         line-height: 64px;
     }
-    .encabezado__boton{
+    .encabezado__boton {
         font-size: map-get($font, base);
         letter-spacing: normal;
     }
-    .seccion{
+    .seccion {
         padding: 4%;
-        &__articulo{
+        &__articulo {
             padding: 17%;
         }
-        &__titulo{
+        &__titulo {
             font-size: map-get($font, xxl);
         }
-        &__subtitulo{
+        &__subtitulo {
             font-size: map-get($font, xlg);
         }
         &__entrada{
@@ -227,18 +239,18 @@
                 width: 80%;
             }
         }
-        &__confirmar{
+        &__confirmar {
             width: 50%;
             margin: 0 auto;
         }
-        &__galeria{
+        &__galeria {
             grid-template-areas: "primero primero segundo segundo segundo segundo tercero tercero" "primero primero segundo segundo segundo segundo tercero tercero" "cuarto  cuarto  cuarto  cuarto  quinto  quinto  tercero tercero" "cuarto  cuarto  cuarto  cuarto  quinto  quinto  noveno  noveno" "sexto   sexto   septimo septimo octavo  octavo  noveno  noveno" "sexto   sexto   septimo septimo octavo  octavo  noveno  noveno";
             grid-template-columns: repeat(8, 1fr);
             grid-template-rows: repeat(6, 5rem);
             grid-row-gap: 10px;
             grid-column-gap: 10px;
         }
-        &__tiempo{
+        &__tiempo {
             list-style-type: none;
             max-width: 100%;
             padding: 0;
@@ -247,14 +259,14 @@
                 margin-top: 20px;
             }
         }
-        &__fecha{
+        &__fecha {
             float: left;
             position: relative;
             text-align: center;
             width: 25%;
             margin-bottom: 10px;
             padding: 3% 1.5%;
-            &:not(:last-child)::after{
+            &:not(:last-child)::after {
                 top: 59%;
                 right: 0;
                 margin-top: 0;
@@ -262,31 +274,27 @@
                 height: 5px;
                 border-radius: 10px 0 0 10px;
             }
-            &:not(:first-child)::before{
+            &:not(:first-child)::before {
                 top: 59%;
                 left: 0;
                 width: 15%;
                 height: 5px;
                 border-radius: 0 10px 10px 0;
             }
-            article{
+            article {
                 width: 100%;
                 margin-top: 30px;
             }
         }
-        &__contenedor{
+        &__contenedor {
             margin-bottom: 50px;
         }
     }
-    .contacto{
-        &__subtitulo{
-            font-size: map-get($font, md);
-        }
+    .contacto__subtitulo {
+        font-size: map-get($font, md);
     }
-    .legales{
-        &__enlaces, &__derechos{
-            font-size: map-get($font, sm);
-        }
+    .legales__enlaces, .legales__derechos {
+        font-size: map-get($font, sm);
     }
 }
 /*Diseño responsive(Media Query mayor a 1200px)*/
@@ -294,7 +302,7 @@
     .seccion__articulo {
         padding: 20%;
     }
-    .seccion__etapa{
+    .seccion__etapa {
         width: 70%;
     }
 }
