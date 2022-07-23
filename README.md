@@ -1,6 +1,6 @@
 # Stelarze Simon Hurtado
 
-![N|Solid](assets/logos/logo-primary.webp)
+![N|Solid](assets/logos/logo-primary.svg)
 
 Proyecto final para curso de desarrollo web realizado en CoderHouse. Con uso de HTML5, CSS3, SASS y Bootstrap.
 
@@ -63,11 +63,11 @@ npm run watch-css
 
 Resumen de los commits realizados en el repositorio:
 
-`Documentación para Entrega de Proyecto Final`
->Committed on 21 Jul 2022
+`Arreglos finales y salida a producción de la Entrega del Proyecto Final`
+>Committed on 22 Jul 2022
 
-`Modificaciones de SEO`
->Committed on 21 Jul 2022
+`Modificaciones de SEO con documentacion y correcciones finales`
+>Committed on 22 Jul 2022
 
 `Modificación de las animaciones`
 >Committed on 18 Jul 2022
@@ -99,10 +99,6 @@ Autor: Carlos Diego Simon Hurtado
 
 Agradecimientos: 
 A mis tutores(Martin Giando, Joaquin Viretti) por siempre corregirme, responder dudas, aconsejarme con el proyecto y a mi profesora Laura Avalle por todos los conocimientos aportados a los largo del curso para el desarrollo de este proyecto.
-
-## Licencia 
-
-Licencias Creative Commons (CC)
 
 ## Estado del proyecto
 
